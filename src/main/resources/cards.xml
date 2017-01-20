@@ -1,0 +1,4289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util">
+
+<import resource="resourceGroups.xml" />
+<import resource="cardFunctors.xml" />
+
+    <util:list id="cards_ages">
+        <!-- AGE I, 3 -->
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="1" />
+            <property name="name" value="Ore Vein" />
+            <property name="age" value="0" />
+            <property name="playerCount" value="3" />
+            <property name="color" value="BROWN" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_ore_1" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_ore_1" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="2" />
+            <property name="name" value="Stone Pit" />
+            <property name="age" value="0" />
+            <property name="playerCount" value="3" />
+            <property name="color" value="BROWN" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_stone_1" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_stone_1" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="3" />
+            <property name="name" value="Lumber Yard" />
+            <property name="age" value="0" />
+            <property name="playerCount" value="3" />
+            <property name="color" value="BROWN" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_wood_1" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_wood_1" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="4" />
+            <property name="name" value="Clay Pool" />
+            <property name="age" value="0" />
+            <property name="playerCount" value="3" />
+            <property name="color" value="BROWN" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_clay_1" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_clay_1" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="5" />
+            <property name="name" value="Glassworks" />
+            <property name="age" value="0" />
+            <property name="playerCount" value="3" />
+            <property name="color" value="GREY" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_glass_1" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_glass_1" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="6" />
+            <property name="name" value="Loom" />
+            <property name="age" value="0" />
+            <property name="playerCount" value="3" />
+            <property name="color" value="GREY" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_loom_1" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_loom_1" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="7" />
+            <property name="name" value="Press" />
+            <property name="age" value="0" />
+            <property name="playerCount" value="3" />
+            <property name="color" value="GREY" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_papyrus_1" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_papyrus_1" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="8" />
+            <property name="name" value="Timber Yard" />
+            <property name="age" value="0" />
+            <property name="playerCount" value="3" />
+            <property name="costCoin" value="1" />
+            <property name="color" value="BROWN" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_stone_1" />
+                    <ref bean="rg_wood_1" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_stone_1" />
+                    <ref bean="rg_wood_1" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="9" />
+            <property name="name" value="Clay Pit" />
+            <property name="age" value="0" />
+            <property name="playerCount" value="3" />
+            <property name="costCoin" value="1" />
+            <property name="color" value="BROWN" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_clay_1" />
+                    <ref bean="rg_ore_1" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_clay_1" />
+                    <ref bean="rg_ore_1" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="10" />
+            <property name="name" value="East Trading Post" />
+            <property name="age" value="0" />
+            <property name="playerCount" value="3" />
+            <property name="whenPlayed" ref="cardFunctor_TradeRightRaw" />
+            <property name="color" value="YELLOW" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="11" />
+            <property name="name" value="West Trading Post" />
+            <property name="age" value="0" />
+            <property name="playerCount" value="3" />
+            <property name="whenPlayed" ref="cardFunctor_TradeLeftRaw" />
+            <property name="color" value="YELLOW" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="12" />
+            <property name="name" value="Marketplace" />
+            <property name="age" value="0" />
+            <property name="playerCount" value="3" />
+            <property name="whenPlayed" ref="cardFunctor_TradeManufactured" />
+            <property name="color" value="YELLOW" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="13" />
+            <property name="name" value="Stockade" />
+            <property name="age" value="0" />
+            <property name="playerCount" value="3" />
+            <property name="militaryValue" value="1" />
+            <property name="color" value="RED" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <ref bean="rg_wood_1" />
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="14" />
+            <property name="name" value="Barracks" />
+            <property name="age" value="0" />
+            <property name="playerCount" value="3" />
+            <property name="militaryValue" value="1" />
+            <property name="color" value="RED" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <ref bean="rg_ore_1" />
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="15" />
+            <property name="name" value="Guard Tower" />
+            <property name="age" value="0" />
+            <property name="playerCount" value="3" />
+            <property name="militaryValue" value="1" />
+            <property name="color" value="RED" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <ref bean="rg_clay_1" />
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="16" />
+            <property name="name" value="Apothecary" />
+            <property name="age" value="0" />
+            <property name="playerCount" value="3" />
+            <property name="science" value="COMPASS" />
+            <property name="color" value="GREEN" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <ref bean="rg_loom_1" />
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="17" />
+            <property name="name" value="Workshop" />
+            <property name="age" value="0" />
+            <property name="playerCount" value="3" />
+            <property name="science" value="GEAR" />
+            <property name="color" value="GREEN" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <ref bean="rg_glass_1" />
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="18" />
+            <property name="name" value="Scriptorium" />
+            <property name="age" value="0" />
+            <property name="playerCount" value="3" />
+            <property name="science" value="TABLET" />
+            <property name="color" value="GREEN" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <ref bean="rg_papyrus_1" />
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="19" />
+            <property name="name" value="Baths" />
+            <property name="age" value="0" />
+            <property name="playerCount" value="3" />
+            <property name="victoryPoints" value="3" />
+            <property name="color" value="BLUE" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <ref bean="rg_stone_1" />
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="20" />
+            <property name="name" value="Altar" />
+            <property name="age" value="0" />
+            <property name="playerCount" value="3" />
+            <property name="victoryPoints" value="2" />
+            <property name="color" value="BLUE" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="21" />
+            <property name="name" value="Theater" />
+            <property name="age" value="0" />
+            <property name="playerCount" value="3" />
+            <property name="victoryPoints" value="2" />
+            <property name="color" value="BLUE" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+        </bean>
+
+        <!-- AGE I, 4 -->
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="22" />
+            <property name="name" value="Ore Vein" />
+            <property name="age" value="0" />
+            <property name="playerCount" value="4" />
+            <property name="color" value="BROWN" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_ore_1" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_ore_1" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="23" />
+            <property name="name" value="Lumber Yard" />
+            <property name="age" value="0" />
+            <property name="playerCount" value="4" />
+            <property name="color" value="BROWN" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_wood_1" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_wood_1" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="24" />
+            <property name="name" value="Excavation" />
+            <property name="age" value="0" />
+            <property name="playerCount" value="4" />
+            <property name="costCoin" value="1" />
+            <property name="color" value="BROWN" />
+            <property name="availableResources">
+                <list>
+                    <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                        <property name="blob">
+                            <map>
+                                <entry key="STONE" value="1" />
+                            </map>
+                        </property>
+                    </bean>
+                    <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                        <property name="blob">
+                            <map>
+                                <entry key="CLAY" value="1" />
+                            </map>
+                        </property>
+                    </bean>
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                        <property name="blob">
+                            <map>
+                                <entry key="STONE" value="1" />
+                            </map>
+                        </property>
+                    </bean>
+                    <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                        <property name="blob">
+                            <map>
+                                <entry key="CLAY" value="1" />
+                            </map>
+                        </property>
+                    </bean>
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="25" />
+            <property name="name" value="Tavern" />
+            <property name="age" value="0" />
+            <property name="playerCount" value="4" />
+            <property name="color" value="YELLOW" />
+            <property name="whenPlayed">
+                <bean class="net.tompy.sw.function.CardFunctorAddCoinsImpl">
+                    <property name="coins" value="5" />
+                </bean>
+            </property>
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="26" />
+            <property name="name" value="Guard Tower" />
+            <property name="age" value="0" />
+            <property name="playerCount" value="4" />
+            <property name="color" value="RED" />
+            <property name="militaryValue" value="1" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <ref bean="rg_clay_1" />
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="27" />
+            <property name="name" value="Scriptorium" />
+            <property name="age" value="0" />
+            <property name="playerCount" value="4" />
+            <property name="color" value="GREEN" />
+            <property name="science" value="TABLET" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <ref bean="rg_papyrus_1" />
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="28" />
+            <property name="name" value="Pawnshop" />
+            <property name="age" value="0" />
+            <property name="playerCount" value="4" />
+            <property name="color" value="BLUE" />
+            <property name="victoryPoints" value="3" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+        </bean>
+        
+        <!-- Age I, 5 -->
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="29" />
+            <property name="name" value="Stone Pit" />
+            <property name="age" value="0" />
+            <property name="playerCount" value="5" />
+            <property name="color" value="BROWN" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_stone_1" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_stone_1" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="30" />
+            <property name="name" value="Clay Pool" />
+            <property name="age" value="0" />
+            <property name="playerCount" value="5" />
+            <property name="color" value="BROWN" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_clay_1" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_clay_1" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="31" />
+            <property name="name" value="Forest Cave" />
+            <property name="age" value="0" />
+            <property name="playerCount" value="5" />
+            <property name="costCoin" value="1" />
+            <property name="color" value="BROWN" />
+            <property name="availableResources">
+                <list>
+                    <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                        <property name="blob">
+                            <map>
+                                <entry key="WOOD" value="1" />
+                            </map>
+                        </property>
+                    </bean>
+                    <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                        <property name="blob">
+                            <map>
+                                <entry key="ORE" value="1" />
+                            </map>
+                        </property>
+                    </bean>
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                        <property name="blob">
+                            <map>
+                                <entry key="WOOD" value="1" />
+                            </map>
+                        </property>
+                    </bean>
+                    <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                        <property name="blob">
+                            <map>
+                                <entry key="ORE" value="1" />
+                            </map>
+                        </property>
+                    </bean>
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+        </bean>
+       <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="32" />
+            <property name="name" value="Tavern" />
+            <property name="age" value="0" />
+            <property name="playerCount" value="5" />
+            <property name="color" value="YELLOW" />
+            <property name="whenPlayed">
+                <bean class="net.tompy.sw.function.CardFunctorAddCoinsImpl">
+                    <property name="coins" value="5" />
+                </bean>
+            </property>
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="33" />
+            <property name="name" value="Barracks" />
+            <property name="age" value="0" />
+            <property name="playerCount" value="5" />
+            <property name="color" value="RED" />
+            <property name="militaryValue" value="1" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <ref bean="rg_ore_1" />
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="34" />
+            <property name="name" value="Apothecary" />
+            <property name="age" value="0" />
+            <property name="playerCount" value="5" />
+            <property name="color" value="GREEN" />
+            <property name="science" value="COMPASS" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <ref bean="rg_loom_1" />
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="35" />
+            <property name="name" value="Altar" />
+            <property name="age" value="0" />
+            <property name="playerCount" value="5" />
+            <property name="color" value="BLUE" />
+            <property name="victoryPoints" value="2" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+        </bean>
+        
+        <!-- Age I, 6 -->
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="36" />
+            <property name="name" value="Press" />
+            <property name="age" value="0" />
+            <property name="playerCount" value="6" />
+            <property name="color" value="GREY" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_papyrus_1" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_papyrus_1" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="37" />
+            <property name="name" value="Glassworks" />
+            <property name="age" value="0" />
+            <property name="playerCount" value="6" />
+            <property name="color" value="GREY" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_glass_1" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_glass_1" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="38" />
+            <property name="name" value="Loom" />
+            <property name="age" value="0" />
+            <property name="playerCount" value="6" />
+            <property name="color" value="GREY" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_loom_1" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_loom_1" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="39" />
+            <property name="name" value="Tree Farm" />
+            <property name="age" value="0" />
+            <property name="playerCount" value="6" />
+            <property name="costCoin" value="1" />
+            <property name="color" value="BROWN" />
+            <property name="availableResources">
+                <list>
+                    <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                        <property name="blob">
+                            <map>
+                                <entry key="WOOD" value="1" />
+                            </map>
+                        </property>
+                    </bean>
+                    <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                        <property name="blob">
+                            <map>
+                                <entry key="CLAY" value="1" />
+                            </map>
+                        </property>
+                    </bean>
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                        <property name="blob">
+                            <map>
+                                <entry key="WOOD" value="1" />
+                            </map>
+                        </property>
+                    </bean>
+                    <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                        <property name="blob">
+                            <map>
+                                <entry key="CLAY" value="1" />
+                            </map>
+                        </property>
+                    </bean>
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="40" />
+            <property name="name" value="Mine" />
+            <property name="age" value="0" />
+            <property name="playerCount" value="6" />
+            <property name="costCoin" value="1" />
+            <property name="color" value="BROWN" />
+            <property name="availableResources">
+                <list>
+                    <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                        <property name="blob">
+                            <map>
+                                <entry key="STONE" value="1" />
+                            </map>
+                        </property>
+                    </bean>
+                    <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                        <property name="blob">
+                            <map>
+                                <entry key="ORE" value="1" />
+                            </map>
+                        </property>
+                    </bean>
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                        <property name="blob">
+                            <map>
+                                <entry key="STONE" value="1" />
+                            </map>
+                        </property>
+                    </bean>
+                    <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                        <property name="blob">
+                            <map>
+                                <entry key="ORE" value="1" />
+                            </map>
+                        </property>
+                    </bean>
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="41" />
+            <property name="name" value="Marketplace" />
+            <property name="age" value="0" />
+            <property name="playerCount" value="6" />
+            <property name="color" value="YELLOW" />
+            <property name="whenPlayed">
+                <bean class="net.tompy.sw.function.CardFunctorReduceTradeManufacturedProductsImpl" />
+            </property>
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="42" />
+            <property name="name" value="Theater" />
+            <property name="age" value="0" />
+            <property name="playerCount" value="6" />
+            <property name="color" value="BLUE" />
+            <property name="victoryPoints" value="2" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+        </bean>
+
+        <!-- Age I, 7 -->        
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="43" />
+            <property name="name" value="West Trading Post" />
+            <property name="age" value="0" />
+            <property name="playerCount" value="7" />
+            <property name="color" value="YELLOW" />
+            <property name="whenPlayed">
+                <bean class="net.tompy.sw.function.CardFunctorReduceTradeLeftRawMaterialsImpl" />
+            </property>
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="44" />
+            <property name="name" value="Tavern" />
+            <property name="age" value="0" />
+            <property name="playerCount" value="7" />
+            <property name="color" value="YELLOW" />
+            <property name="whenPlayed">
+                <bean class="net.tompy.sw.function.CardFunctorAddCoinsImpl">
+                    <property name="coins" value="5" />
+                </bean>
+            </property>
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="45" />
+            <property name="name" value="East Trading Post" />
+            <property name="age" value="0" />
+            <property name="playerCount" value="7" />
+            <property name="color" value="YELLOW" />
+            <property name="whenPlayed">
+                <bean class="net.tompy.sw.function.CardFunctorReduceTradeRightRawMaterialsImpl" />
+            </property>
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+        </bean>
+          <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="46" />
+            <property name="name" value="Stockade" />
+            <property name="age" value="0" />
+            <property name="playerCount" value="7" />
+            <property name="color" value="RED" />
+            <property name="militaryValue" value="1" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <ref bean="rg_wood_1" />
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="47" />
+            <property name="name" value="Workshop" />
+            <property name="age" value="0" />
+            <property name="playerCount" value="7" />
+            <property name="color" value="GREEN" />
+            <property name="science" value="GEAR" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <ref bean="rg_glass_1" />
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="48" />
+            <property name="name" value="Pawnshop" />
+            <property name="age" value="0" />
+            <property name="playerCount" value="7" />
+            <property name="color" value="BLUE" />
+            <property name="victoryPoints" value="3" />>
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="49" />
+            <property name="name" value="Baths" />
+            <property name="age" value="0" />
+            <property name="playerCount" value="7" />
+            <property name="color" value="BLUE" />
+            <property name="victoryPoints" value="3" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <ref bean="rg_stone_1" />
+                </list>
+            </property>
+        </bean>
+        
+        
+        <!-- Age II, 3 -->
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="50" />
+            <property name="name" value="Foundry" />
+            <property name="age" value="1" />
+            <property name="playerCount" value="3" />
+            <property name="costCoin" value="1" />
+            <property name="color" value="BROWN" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_ore_2" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_ore_2" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="51" />
+            <property name="name" value="Brickyard" />
+            <property name="age" value="1" />
+            <property name="playerCount" value="3" />
+            <property name="costCoin" value="1" />
+            <property name="color" value="BROWN" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_clay_2" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_clay_2" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="52" />
+            <property name="name" value="Sawmill" />
+            <property name="age" value="1" />
+            <property name="playerCount" value="3" />
+            <property name="costCoin" value="1" />
+            <property name="color" value="BROWN" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_wood_2" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_wood_2" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="53" />
+            <property name="name" value="Quarry" />
+            <property name="age" value="1" />
+            <property name="playerCount" value="3" />
+            <property name="costCoin" value="1" />
+            <property name="color" value="BROWN" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_stone_2" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_stone_2" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="54" />
+            <property name="name" value="Press" />
+            <property name="age" value="1" />
+            <property name="playerCount" value="3" />
+            <property name="costCoin" value="1" />
+            <property name="color" value="GREY" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_papyrus_1" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_papyrus_1" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="55" />
+            <property name="name" value="Glassworks" />
+            <property name="age" value="1" />
+            <property name="playerCount" value="3" />
+            <property name="costCoin" value="1" />
+            <property name="color" value="GREY" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_glass_1" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_glass_1" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+        </bean>
+         <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="56" />
+            <property name="name" value="Loom" />
+            <property name="age" value="1" />
+            <property name="playerCount" value="3" />
+            <property name="costCoin" value="1" />
+            <property name="color" value="GREY" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_loom_1" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_loom_1" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="57" />
+            <property name="name" value="Vineyard" />
+            <property name="age" value="1" />
+            <property name="playerCount" value="3" />
+            <property name="color" value="YELLOW" />
+            <property name="whenPlayed" ref="cardFunctor_1coinForBrown" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="58" />
+            <property name="name" value="Forum" />
+            <property name="age" value="1" />
+            <property name="playerCount" value="3" />
+            <property name="color" value="YELLOW" />
+            <property name="forFree" value="Trading Post" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_glass_1" />
+                    <ref bean="rg_loom_1" />
+                    <ref bean="rg_papyrus_1" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <ref bean="rg_clay_2" />
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="59" />
+            <property name="name" value="Caravansery" />
+            <property name="age" value="1" />
+            <property name="playerCount" value="3" />
+            <property name="color" value="YELLOW" />
+            <property name="forFree" value="Marketplace" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_wood_1" />
+                    <ref bean="rg_stone_1" />
+                    <ref bean="rg_ore_1" />
+                    <ref bean="rg_clay_1" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <ref bean="rg_wood_2" />
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="60" />
+            <property name="name" value="Walls" />
+            <property name="age" value="1" />
+            <property name="playerCount" value="3" />
+            <property name="color" value="RED" />
+            <property name="militaryValue" value="2" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <ref bean="rg_stone_3" />
+                </list>
+            </property>
+        </bean>    
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="61" />
+            <property name="name" value="Stables" />
+            <property name="age" value="1" />
+            <property name="playerCount" value="3" />
+            <property name="color" value="RED" />
+            <property name="militaryValue" value="2" />
+            <property name="forFree" value="Apothecary" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <ref bean="rg_clay1_wood1_ore1" />
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="62" />
+            <property name="name" value="Archery Range" />
+            <property name="age" value="1" />
+            <property name="playerCount" value="3" />
+            <property name="color" value="RED" />
+            <property name="militaryValue" value="2" />
+            <property name="forFree" value="Workshop" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <ref bean="rg_wood2_ore1" />
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="63" />
+            <property name="name" value="Laboratory" />
+            <property name="age" value="1" />
+            <property name="playerCount" value="3" />
+            <property name="color" value="GREEN" />
+            <property name="science" value="GEAR" />
+            <property name="forFree" value="Workshop" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <ref bean="rg_clay2_papyrus1" />
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="64" />
+            <property name="name" value="School" />
+            <property name="age" value="1" />
+            <property name="playerCount" value="3" />
+            <property name="color" value="GREEN" />
+            <property name="science" value="TABLET" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <ref bean="rg_wood1_papyrus1" />
+                </list>
+            </property>
+         </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="64" />
+            <property name="name" value="Library" />
+            <property name="age" value="1" />
+            <property name="playerCount" value="3" />
+            <property name="color" value="GREEN" />
+            <property name="science" value="TABLET" />
+            <property name="forFree" value="Scriptorium" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <ref bean="rg_stone2_loom1" />
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="65" />
+            <property name="name" value="Dispensary" />
+            <property name="age" value="1" />
+            <property name="playerCount" value="3" />
+            <property name="color" value="GREEN" />
+            <property name="science" value="COMPASS" />
+            <property name="forFree" value="Apothecary" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <ref bean="rg_ore2_glass1" />
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="65" />
+            <property name="name" value="Aqueduct" />
+            <property name="age" value="1" />
+            <property name="playerCount" value="3" />
+            <property name="color" value="BLUE" />
+            <property name="victoryPoints" value="5" />
+            <property name="forFree" value="Baths" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <ref bean="rg_stone_3" />
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="66" />
+            <property name="name" value="Statue" />
+            <property name="age" value="1" />
+            <property name="playerCount" value="3" />
+            <property name="color" value="BLUE" />
+            <property name="victoryPoints" value="4" />
+            <property name="forFree" value="Theater" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <ref bean="rg_ore2_wood1" />
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="67" />
+            <property name="name" value="Courthouse" />
+            <property name="age" value="1" />
+            <property name="playerCount" value="3" />
+            <property name="color" value="BLUE" />
+            <property name="victoryPoints" value="4" />
+            <property name="forFree" value="Scriptorium" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <ref bean="rg_clay2_loom1" />
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="68" />
+            <property name="name" value="Temple" />
+            <property name="age" value="1" />
+            <property name="playerCount" value="3" />
+            <property name="color" value="BLUE" />
+            <property name="victoryPoints" value="3" />
+            <property name="forFree" value="Altar" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <ref bean="rg_wood1_clay1_glass1" />
+                </list>
+            </property>
+        </bean>
+        
+        <!-- Age II, 4 -->
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="69" />
+            <property name="name" value="Foundry" />
+            <property name="age" value="1" />
+            <property name="playerCount" value="4" />
+            <property name="color" value="BROWN" />
+            <property name="costCoin" value="1" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_ore_2" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_ore_2" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="70" />
+            <property name="name" value="Sawmill" />
+            <property name="age" value="1" />
+            <property name="playerCount" value="4" />
+            <property name="color" value="BROWN" />
+            <property name="costCoin" value="1" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_wood_2" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_wood_2" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="71" />
+            <property name="name" value="Brickyard" />
+            <property name="age" value="1" />
+            <property name="playerCount" value="4" />
+            <property name="color" value="BROWN" />
+            <property name="costCoin" value="1" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_clay_2" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_clay_2" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="72" />
+            <property name="name" value="Quarry" />
+            <property name="age" value="1" />
+            <property name="playerCount" value="4" />
+            <property name="color" value="BROWN" />
+            <property name="costCoin" value="1" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_stone_2" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_stone_2" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="73" />
+            <property name="name" value="Bazar" />
+            <property name="age" value="1" />
+            <property name="playerCount" value="4" />
+            <property name="color" value="YELLOW" />
+            <property name="whenPlayed">
+                <bean class="net.tompy.sw.function.CardFunctorCoinsForNeighborsColorImpl">
+                    <property name="coins" value="2" />
+                    <property name="colors">
+                        <list>
+                            <value>GREY</value>
+                        </list>
+                    </property>
+                    <property name="self" value="true" />
+                </bean>
+            </property>
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="74" />
+            <property name="name" value="Training Ground" />
+            <property name="age" value="1" />
+            <property name="playerCount" value="4" />
+            <property name="color" value="RED" />
+            <property name="militaryValue" value="2" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                        <property name="blob">
+                            <map>
+                                <entry key="ORE" value="2" />
+                                <entry key="WOOD" value="1" />
+                            </map>
+                        </property>
+                    </bean>
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="75" />
+            <property name="name" value="Dispensary" />
+            <property name="age" value="1" />
+            <property name="playerCount" value="4" />
+            <property name="color" value="GREEN" />
+            <property name="forFree" value="Apothecary" />
+            <property name="science" value="COMPASS" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                        <property name="blob">
+                            <map>
+                                <entry key="ORE" value="2" />
+                                <entry key="GLASS" value="1" />
+                            </map>
+                        </property>
+                    </bean>
+                </list>
+            </property>
+        </bean>
+ 
+        <!-- Age II, 5 -->       
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="76" />
+            <property name="name" value="Press" />
+            <property name="age" value="1" />
+            <property name="playerCount" value="5" />
+            <property name="color" value="GREY" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_papyrus_1" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_papyrus_1" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="77" />
+            <property name="name" value="Glassworks" />
+            <property name="age" value="1" />
+            <property name="playerCount" value="5" />
+            <property name="color" value="GREY" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_glass_1" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_glass_1" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="78" />
+            <property name="name" value="Loom" />
+            <property name="age" value="1" />
+            <property name="playerCount" value="5" />
+            <property name="color" value="GREY" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_loom_1" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_loom_1" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="79" />
+            <property name="name" value="Caravansery" />
+            <property name="age" value="1" />
+            <property name="playerCount" value="5" />
+            <property name="color" value="YELLOW" />
+            <property name="forFree" value="Marketplace" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_wood_1" />
+                    <ref bean="rg_stone_1" />
+                    <ref bean="rg_ore_1" />
+                    <ref bean="rg_clay_1" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <ref bean="rg_wood_2" />
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="80" />
+            <property name="name" value="Stables" />
+            <property name="age" value="1" />
+            <property name="playerCount" value="5" />
+            <property name="color" value="RED" />
+            <property name="forFree" value="Apothecary" />
+            <property name="militaryValue" value="2" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                        <property name="blob">
+                            <map>
+                                <entry key="CLAY" value="1" />
+                                <entry key="WOOD" value="1" />
+                                <entry key="ORE" value="1" />
+                            </map>
+                        </property>
+                    </bean>
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="81" />
+            <property name="name" value="Laboratory" />
+            <property name="age" value="1" />
+            <property name="playerCount" value="5" />
+            <property name="color" value="GREEN" />
+            <property name="forFree" value="Workshop" />
+            <property name="science" value="GEAR" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                        <property name="blob">
+                            <map>
+                                <entry key="CLAY" value="2" />
+                                <entry key="PAPYRUS" value="1" />
+                            </map>
+                        </property>
+                    </bean>
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="82" />
+            <property name="name" value="Courthouse" />
+            <property name="age" value="1" />
+            <property name="playerCount" value="5" />
+            <property name="color" value="BLUE" />
+            <property name="forFree" value="Scriptorium" />
+            <property name="victoryPoints" value="4" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                        <property name="blob">
+                            <map>
+                                <entry key="CLAY" value="2" />
+                                <entry key="LOOM" value="1" />
+                            </map>
+                        </property>
+                    </bean>
+                </list>
+            </property>
+        </bean>
+
+        <!-- AgeII, 6 -->        
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="83" />
+            <property name="name" value="Caravansery" />
+            <property name="age" value="1" />
+            <property name="playerCount" value="6" />
+            <property name="color" value="YELLOW" />
+            <property name="forFree" value="Marketplace" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_wood_1" />
+                    <ref bean="rg_stone_1" />
+                    <ref bean="rg_ore_1" />
+                    <ref bean="rg_clay_1" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <ref bean="rg_wood_2" />
+                </list>
+            </property>
+        </bean>
+         <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="84" />
+            <property name="name" value="Forum" />
+            <property name="age" value="1" />
+            <property name="playerCount" value="6" />
+            <property name="color" value="YELLOW" />
+            <property name="forFree" value="TradingPost" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_glass_1" />
+                    <ref bean="rg_loom_1" />
+                    <ref bean="rg_papyrus_1" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <ref bean="rg_clay_2" />
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="85" />
+            <property name="name" value="Vineyard" />
+            <property name="age" value="1" />
+            <property name="playerCount" value="6" />
+            <property name="color" value="YELLOW" />
+            <property name="whenPlayed">
+                <bean class="net.tompy.sw.function.CardFunctorCoinsForNeighborsColorImpl">
+                    <property name="coins" value="1" />
+                    <property name="colors">
+                        <list>
+                            <value>BROWN</value>
+                        </list>
+                    </property>
+                    <property name="self" value="true" />
+                </bean>
+            </property>
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+        </bean>
+         <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="86" />
+            <property name="name" value="Archery Range" />
+            <property name="age" value="1" />
+            <property name="playerCount" value="6" />
+            <property name="color" value="RED" />
+            <property name="forFree" value="Workshop" />
+            <property name="militaryValue" value="2" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                        <property name="blob">
+                            <map>
+                                <entry key="WOOD" value="2" />
+                                <entry key="ORE" value="1" />
+                            </map>
+                        </property>
+                    </bean>
+                </list>
+            </property>
+        </bean>
+         <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="87" />
+            <property name="name" value="Training Grounds" />
+            <property name="age" value="1" />
+            <property name="playerCount" value="6" />
+            <property name="color" value="RED" />
+            <property name="militaryValue" value="2" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                        <property name="blob">
+                            <map>
+                                <entry key="WOOD" value="1" />
+                                <entry key="ORE" value="2" />
+                            </map>
+                        </property>
+                    </bean>
+                </list>
+            </property>
+        </bean>
+         <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="88" />
+            <property name="name" value="Library" />
+            <property name="age" value="1" />
+            <property name="playerCount" value="6" />
+            <property name="color" value="GREEN" />
+            <property name="forFree" value="Scriptorium" />
+            <property name="science" value="TABLET" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                        <property name="blob">
+                            <map>
+                                <entry key="STONE" value="2" />
+                                <entry key="LOOM" value="1" />
+                            </map>
+                        </property>
+                    </bean>
+                </list>
+            </property>
+        </bean>
+         <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="89" />
+            <property name="name" value="Temple" />
+            <property name="age" value="1" />
+            <property name="playerCount" value="6" />
+            <property name="color" value="BLUE" />
+            <property name="forFree" value="ALtar" />
+            <property name="victoryPoints" value="3" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                        <property name="blob">
+                            <map>
+                                <entry key="WOOD" value="1" />
+                                <entry key="CLAY" value="1" />
+                                <entry key="GLASS" value="1" />
+                            </map>
+                        </property>
+                    </bean>
+                </list>
+            </property>
+        </bean>
+        
+        
+        <!-- Age II, 7 -->
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="90" />
+            <property name="name" value="Bazar" />
+            <property name="age" value="1" />
+            <property name="playerCount" value="7" />
+            <property name="color" value="YELLOW" />
+            <property name="whenPlayed">
+                <bean class="net.tompy.sw.function.CardFunctorCoinsForNeighborsColorImpl">
+                    <property name="coins" value="2" />
+                    <property name="colors">
+                        <list>
+                            <value>GREY</value>
+                        </list>
+                    </property>
+                    <property name="self" value="true" />
+                </bean>
+            </property>
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="91" />
+            <property name="name" value="Forum" />
+            <property name="age" value="1" />
+            <property name="playerCount" value="7" />
+            <property name="color" value="YELLOW" />
+            <property name="forFree" value="Trading Post" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_glass_1" />
+                    <ref bean="rg_loom_1" />
+                    <ref bean="rg_papyrus_1" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <ref bean="rg_clay_2" />
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="92" />
+            <property name="name" value="Walls" />
+            <property name="age" value="1" />
+            <property name="playerCount" value="7" />
+            <property name="color" value="RED" />
+            <property name="militaryValue" value="2" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                        <property name="blob">
+                            <map>
+                                <entry key="STONE" value="3" />
+                            </map>
+                        </property>
+                    </bean>
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="93" />
+            <property name="name" value="Training Grounds" />
+            <property name="age" value="1" />
+            <property name="playerCount" value="7" />
+            <property name="color" value="RED" />
+            <property name="militaryValue" value="2" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                        <property name="blob">
+                            <map>
+                                <entry key="ORE" value="2" />
+                                <entry key="WOOD" value="1" />
+                            </map>
+                        </property>
+                    </bean>
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="94" />
+            <property name="name" value="School" />
+            <property name="age" value="1" />
+            <property name="playerCount" value="7" />
+            <property name="color" value="GREEN" />
+            <property name="science" value="TABLET" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                        <property name="blob">
+                            <map>
+                                <entry key="PAPYRUS" value="1" />
+                                <entry key="WOOD" value="1" />
+                            </map>
+                        </property>
+                    </bean>
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="95" />
+            <property name="name" value="Aqueduct" />
+            <property name="age" value="1" />
+            <property name="playerCount" value="7" />
+            <property name="color" value="BLUE" />
+            <property name="forFree" value="Baths" />
+            <property name="victoryPoints" value="5" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                        <property name="blob">
+                            <map>
+                                <entry key="STONE" value="3" />
+                            </map>
+                        </property>
+                    </bean>
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="96" />
+            <property name="name" value="Statue" />
+            <property name="age" value="1" />
+            <property name="playerCount" value="7" />
+            <property name="color" value="BLUE" />
+            <property name="forFree" value="Theater" />
+            <property name="victoryPoints" value="4" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                        <property name="blob">
+                            <map>
+                                <entry key="ORE" value="2" />
+                                <entry key="WOOD" value="1" />
+                            </map>
+                        </property>
+                    </bean>
+                </list>
+            </property>
+        </bean>
+        
+        
+        
+
+ 
+        <!-- Age III, 3 -->
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="97" />
+            <property name="name" value="Haven" />
+            <property name="age" value="2" />
+            <property name="playerCount" value="3" />
+            <property name="color" value="YELLOW" />
+            <property name="forFree" value="Forum" />
+            <property name="whenPlayed" ref="cardFunctor_1coinForBrown" />
+            <property name="whenScored" ref="cardFunctor_1pointForBrown" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                        <property name="blob">
+                            <map>
+                                <entry key="CLAY" value="3" />
+                                <entry key="WOOD" value="1" />
+                            </map>
+                        </property>
+                    </bean>
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="98" />
+            <property name="name" value="Lighthouse" />
+            <property name="age" value="2" />
+            <property name="playerCount" value="3" />
+            <property name="color" value="YELLOW" />
+            <property name="forFree" value="Caravansery" />
+            <property name="whenPlayed" ref="cardFunctor_1coinForYellow" />
+            <property name="whenScored" ref="cardFunctor_1pointForYellow" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                        <property name="blob">
+                            <map>
+                                <entry key="STONE" value="1" />
+                                <entry key="GLASS" value="1" />
+                            </map>
+                        </property>
+                    </bean>
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="99" />
+            <property name="name" value="Lighthouse" />
+            <property name="age" value="2" />
+            <property name="playerCount" value="3" />
+            <property name="color" value="YELLOW" />
+            <property name="forFree" value="Dispensary" />
+            <property name="whenPlayed" ref="cardFunctor_1coinForWonder" />
+            <property name="whenScored" ref="cardFunctor_1pointForWonder" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                        <property name="blob">
+                            <map>
+                                <entry key="STONE" value="2" />
+                                <entry key="ORE" value="1" />
+                            </map>
+                        </property>
+                    </bean>
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="100" />
+            <property name="name" value="Siege Workshop" />
+            <property name="age" value="2" />
+            <property name="playerCount" value="3" />
+            <property name="color" value="RED" />
+            <property name="forFree" value="Laboratory" />
+            <property name="militaryValue" value="3" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+				    <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+				        <property name="blob">
+				            <map>
+				                <entry key="CLAY" value="3" />
+                                <entry key="WOOD" value="1" />
+				            </map>
+				        </property>
+				    </bean>
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="101" />
+            <property name="name" value="Arsenal" />
+            <property name="age" value="2" />
+            <property name="playerCount" value="3" />
+            <property name="color" value="RED" />
+            <property name="militaryValue" value="3" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                        <property name="blob">
+                            <map>
+                                <entry key="ORE" value="1" />
+                                <entry key="WOOD" value="2" />
+                                <entry key="LOOM" value="1" />
+                            </map>
+                        </property>
+                    </bean>
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="102" />
+            <property name="name" value="Fortifications" />
+            <property name="age" value="2" />
+            <property name="playerCount" value="3" />
+            <property name="color" value="RED" />
+            <property name="forFree" value="Walls" />
+            <property name="militaryValue" value="3" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                        <property name="blob">
+                            <map>
+                                <entry key="ORE" value="3" />
+                                <entry key="STONE" value="1" />
+                            </map>
+                        </property>
+                    </bean>
+                </list>
+            </property>
+        </bean>    
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="103" />
+            <property name="name" value="Academy" />
+            <property name="age" value="2" />
+            <property name="playerCount" value="3" />
+            <property name="color" value="GREEN" />
+            <property name="science" value="COMPASS" />
+            <property name="forFree" value="School" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                        <property name="blob">
+                            <map>
+                                <entry key="STONE" value="3" />
+                                <entry key="GLASS" value="1" />
+                            </map>
+                        </property>
+                    </bean>
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="104" />
+            <property name="name" value="Lodge" />
+            <property name="age" value="2" />
+            <property name="playerCount" value="3" />
+            <property name="color" value="GREEN" />
+            <property name="science" value="COMPASS" />
+            <property name="forFree" value="Dispensary" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                        <property name="blob">
+                            <map>
+                                <entry key="CLAY" value="2" />
+                                <entry key="PAPYRUS" value="1" />
+                                <entry key="LOOM" value="1" />
+                            </map>
+                        </property>
+                    </bean>
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="105" />
+            <property name="name" value="Study" />
+            <property name="age" value="2" />
+            <property name="playerCount" value="3" />
+            <property name="color" value="GREEN" />
+            <property name="science" value="GEAR" />
+            <property name="forFree" value="School" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                        <property name="blob">
+                            <map>
+                                <entry key="WOOD" value="1" />
+                                <entry key="PAPYRUS" value="1" />
+                                <entry key="LOOM" value="1" />
+                            </map>
+                        </property>
+                    </bean>
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="106" />
+            <property name="name" value="University" />
+            <property name="age" value="2" />
+            <property name="playerCount" value="3" />
+            <property name="color" value="GREEN" />
+            <property name="science" value="TABLET" />
+            <property name="forFree" value="Library" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                        <property name="blob">
+                            <map>
+                                <entry key="WOOD" value="2" />
+                                <entry key="PAPYRUS" value="1" />
+                                <entry key="GLASS" value="1" />
+                            </map>
+                        </property>
+                    </bean>
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="107" />
+            <property name="name" value="Observatory" />
+            <property name="age" value="2" />
+            <property name="playerCount" value="3" />
+            <property name="color" value="GREEN" />
+            <property name="science" value="GEAR" />
+            <property name="forFree" value="Laboratory" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                        <property name="blob">
+                            <map>
+                                <entry key="ORE" value="2" />
+                                <entry key="GLASS" value="1" />
+                                <entry key="LOOM" value="1" />
+                            </map>
+                        </property>
+                    </bean>
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="108" />
+            <property name="name" value="Palace" />
+            <property name="age" value="2" />
+            <property name="playerCount" value="3" />
+            <property name="color" value="BLUE" />
+            <property name="victoryPoints" value="8" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                        <property name="blob">
+                            <map>
+                                <entry key="STONE" value="1" />
+                                <entry key="ORE" value="1" />
+                                <entry key="WOOD" value="1" />
+                                <entry key="CLAY" value="1" />
+                                <entry key="GLASS" value="1" />
+                                <entry key="LOOM" value="1" />
+                                <entry key="PAPYRUS" value="1" />
+                            </map>
+                        </property>
+                    </bean>
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="109" />
+            <property name="name" value="Townhall" />
+            <property name="age" value="2" />
+            <property name="playerCount" value="3" />
+            <property name="color" value="BLUE" />
+            <property name="victoryPoints" value="6" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                        <property name="blob">
+                            <map>
+                                <entry key="STONE" value="2" />
+                                <entry key="ORE" value="1" />
+                                <entry key="GLASS" value="1" />
+                            </map>
+                        </property>
+                    </bean>
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="110" />
+            <property name="name" value="Pantheon" />
+            <property name="age" value="2" />
+            <property name="playerCount" value="3" />
+            <property name="color" value="BLUE" />
+            <property name="victoryPoints" value="7" />
+            <property name="forFree" value="Temple" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                        <property name="blob">
+                            <map>
+                                <entry key="CLAY" value="2" />
+                                <entry key="ORE" value="1" />
+                                <entry key="GLASS" value="1" />
+                                <entry key="PAPYRUS" value="1" />
+                                <entry key="LOOM" value="1" />
+                            </map>
+                        </property>
+                    </bean>
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="111" />
+            <property name="name" value="Gardens" />
+            <property name="age" value="2" />
+            <property name="playerCount" value="3" />
+            <property name="color" value="BLUE" />
+            <property name="victoryPoints" value="5" />
+            <property name="forFree" value="Statue" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                        <property name="blob">
+                            <map>
+                                <entry key="CLAY" value="2" />
+                                <entry key="WOOD" value="1" />
+                            </map>
+                        </property>
+                    </bean>
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="112" />
+            <property name="name" value="Senate" />
+            <property name="age" value="2" />
+            <property name="playerCount" value="3" />
+            <property name="color" value="BLUE" />
+            <property name="victoryPoints" value="6" />
+            <property name="forFree" value="Library" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                        <property name="blob">
+                            <map>
+                                <entry key="WOOD" value="2" />
+                                <entry key="STONE" value="1" />
+                                <entry key="ORE" value="1" />
+                            </map>
+                        </property>
+                    </bean>
+                </list>
+            </property>
+        </bean>
+
+
+        <!-- Age III, 4 -->
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="113" />
+            <property name="name" value="Chamber of Commerce" />
+            <property name="age" value="2" />
+            <property name="playerCount" value="4" />
+            <property name="color" value="YELLOW" />
+            <property name="whenPlayed">
+                <bean class="net.tompy.sw.function.CardFunctorCoinsForColorImpl">
+                    <property name="coins" value="2" />
+                    <property name="color" value="GREY" />
+                </bean>
+            </property>
+            <property name="whenScored">
+                <bean class="net.tompy.sw.function.CardFunctorPointsForColorImpl">
+                    <property name="points" value="2" />
+                    <property name="colors">
+                        <list>
+                            <value>GREY</value>
+                        </list>
+                    </property>
+                </bean>
+            </property>
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                        <property name="blob">
+                            <map>
+                                <entry key="CLAY" value="2" />
+                                <entry key="PAPYRUS" value="1" />
+                            </map>
+                        </property>
+                    </bean>
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="114" />
+            <property name="name" value="Haven" />
+            <property name="age" value="2" />
+            <property name="playerCount" value="4" />
+            <property name="color" value="YELLOW" />
+            <property name="forFree" value="Forum" />
+            <property name="whenPlayed">
+                <bean class="net.tompy.sw.function.CardFunctorCoinsForColorImpl">
+                    <property name="coins" value="1" />
+                    <property name="color" value="BROWN" />
+                </bean>
+            </property>
+            <property name="whenScored">
+                <bean class="net.tompy.sw.function.CardFunctorPointsForColorImpl">
+                    <property name="points" value="1" />
+                    <property name="colors">
+                        <list>
+                            <value>BROWN</value>
+                        </list>
+                    </property>
+                </bean>
+            </property>
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                        <property name="blob">
+                            <map>
+                                <entry key="WOOD" value="1" />
+                                <entry key="ORE" value="1" />
+                                <entry key="LOOM" value="1" />
+                            </map>
+                        </property>
+                    </bean>
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="115" />
+            <property name="name" value="Circus" />
+            <property name="age" value="2" />
+            <property name="playerCount" value="4" />
+            <property name="color" value="RED" />
+            <property name="forFree" value="Training Ground" />
+            <property name="militaryValue" value="3" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                        <property name="blob">
+                            <map>
+                                <entry key="STONE" value="3" />
+                                <entry key="ORE" value="1" />
+                            </map>
+                        </property>
+                    </bean>
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="116" />
+            <property name="name" value="Arsenal" />
+            <property name="age" value="2" />
+            <property name="playerCount" value="4" />
+            <property name="color" value="RED" />
+            <property name="militaryValue" value="3" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                        <property name="blob">
+                            <map>
+                                <entry key="WOOD" value="2" />
+                                <entry key="ORE" value="1" />
+                                <entry key="LOOM" value="1" />
+                            </map>
+                        </property>
+                    </bean>
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="117" />
+            <property name="name" value="University" />
+            <property name="age" value="2" />
+            <property name="playerCount" value="4" />
+            <property name="color" value="GREEN" />
+            <property name="forFree" value="Library" />
+            <property name="science" value="TABLET" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                        <property name="blob">
+                            <map>
+                                <entry key="WOOD" value="2" />
+                                <entry key="PAPYRUS" value="1" />
+                                <entry key="GLASS" value="1" />
+                            </map>
+                        </property>
+                    </bean>
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="118" />
+            <property name="name" value="Gardens" />
+            <property name="age" value="2" />
+            <property name="playerCount" value="4" />
+            <property name="color" value="BLUE" />
+            <property name="forFree" value="Statue" />
+            <property name="victoryPoints" value="5" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                        <property name="blob">
+                            <map>
+                                <entry key="CLAY" value="2" />
+                                <entry key="WOOD" value="1" />
+                            </map>
+                        </property>
+                    </bean>
+                </list>
+            </property>
+        </bean>
+        
+        <!-- Age III, 5 -->
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="119" />
+            <property name="name" value="Arena" />
+            <property name="age" value="2" />
+            <property name="playerCount" value="5" />
+            <property name="color" value="YELLOW" />
+            <property name="forFree" value="Dispensary" />
+            <property name="whenPlayed">
+                <bean class="net.tompy.sw.function.CardFunctorCoinsForColorImpl">
+                    <property name="coins" value="3" />
+                    <property name="color" value="WONDER" />
+                </bean>
+            </property>
+            <property name="whenScored">
+                <bean class="net.tompy.sw.function.CardFunctorPointsForColorImpl">
+                    <property name="points" value="1" />
+                    <property name="colors">
+                        <list>
+                            <value>WONDER</value>
+                        </list>
+                    </property>
+                </bean>
+            </property>
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                        <property name="blob">
+                            <map>
+                                <entry key="STONE" value="2" />
+                                <entry key="ORE" value="1" />
+                            </map>
+                        </property>
+                    </bean>
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="120" />
+            <property name="name" value="Circus" />
+            <property name="age" value="2" />
+            <property name="playerCount" value="5" />
+            <property name="color" value="RED" />
+            <property name="forFree" value="Training Ground" />
+            <property name="militaryValue" value="3" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                        <property name="blob">
+                            <map>
+                                <entry key="STONE" value="3" />
+                                <entry key="ORE" value="1" />
+                            </map>
+                        </property>
+                    </bean>
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="121" />
+            <property name="name" value="Siege Workshop" />
+            <property name="age" value="2" />
+            <property name="playerCount" value="5" />
+            <property name="color" value="RED" />
+            <property name="forFree" value="Laboratory" />
+            <property name="militaryValue" value="3" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                        <property name="blob">
+                            <map>
+                                <entry key="CLAY" value="3" />
+                                <entry key="WOOD" value="1" />
+                            </map>
+                        </property>
+                    </bean>
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="122" />
+            <property name="name" value="Study" />
+            <property name="age" value="2" />
+            <property name="playerCount" value="5" />
+            <property name="color" value="GREEN" />
+            <property name="forFree" value="School" />
+            <property name="science" value="GEAR" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                        <property name="blob">
+                            <map>
+                                <entry key="WOOD" value="1" />
+                                <entry key="PAPYRUS" value="1" />
+                                <entry key="LOOM" value="1" />
+                            </map>
+                        </property>
+                    </bean>
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="123" />
+            <property name="name" value="Townhall" />
+            <property name="age" value="2" />
+            <property name="playerCount" value="5" />
+            <property name="color" value="BLUE" />
+            <property name="victoryPoints" value="6" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                        <property name="blob">
+                            <map>
+                                <entry key="STONE" value="2" />
+                                <entry key="ORE" value="1" />
+                                <entry key="GLASS" value="1" />
+                            </map>
+                        </property>
+                    </bean>
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="124" />
+            <property name="name" value="Senate" />
+            <property name="age" value="2" />
+            <property name="playerCount" value="5" />
+            <property name="color" value="BLUE" />
+            <property name="forFree" value="Library" />
+            <property name="victoryPoints" value="6" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                        <property name="blob">
+                            <map>
+                                <entry key="STONE" value="1" />
+                                <entry key="ORE" value="1" />
+                                <entry key="WOOD" value="2" />
+                            </map>
+                        </property>
+                    </bean>
+                </list>
+            </property>
+        </bean>
+
+        <!-- Age III, 6 -->
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="125" />
+            <property name="name" value="Lighthouse" />
+            <property name="age" value="2" />
+            <property name="playerCount" value="6" />
+            <property name="color" value="YELLOW" />
+            <property name="forFree" value="Caravansery" />
+            <property name="whenPlayed" ref="cardFunctor_1coinForYellow" />
+            <property name="whenScored" ref="cardFunctor_1pointForYellow" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                        <property name="blob">
+                            <map>
+                                <entry key="STONE" value="1" />
+                                <entry key="GLASS" value="1" />
+                            </map>
+                        </property>
+                    </bean>
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="126" />
+            <property name="name" value="Chamber of Commerce" />
+            <property name="age" value="2" />
+            <property name="playerCount" value="6" />
+            <property name="color" value="YELLOW" />
+            <property name="whenPlayed">
+                <bean class="net.tompy.sw.function.CardFunctorCoinsForColorImpl">
+                    <property name="coins" value="2" />
+                    <property name="color" value="GREY" />
+                </bean>
+            </property>
+            <property name="whenScored">
+                <bean class="net.tompy.sw.function.CardFunctorPointsForColorImpl">
+                    <property name="points" value="2" />
+                    <property name="colors">
+                        <list>
+                            <value>GREY</value>
+                        </list>
+                    </property>
+                </bean>
+            </property>
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                        <property name="blob">
+                            <map>
+                                <entry key="CLAY" value="2" />
+                                <entry key="PAPYRUS" value="1" />
+                            </map>
+                        </property>
+                    </bean>
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="127" />
+            <property name="name" value="Circus" />
+            <property name="age" value="2" />
+            <property name="playerCount" value="6" />
+            <property name="color" value="RED" />
+            <property name="forFree" value="Training Ground" />
+            <property name="militaryValue" value="3" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                        <property name="blob">
+                            <map>
+                                <entry key="STONE" value="3" />
+                                <entry key="ORE" value="1" />
+                            </map>
+                        </property>
+                    </bean>
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="128" />
+            <property name="name" value="Lodge" />
+            <property name="age" value="2" />
+            <property name="playerCount" value="6" />
+            <property name="color" value="GREEN" />
+            <property name="forFree" value="Dispensary" />
+            <property name="science" value="COMPASS" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                        <property name="blob">
+                            <map>
+                                <entry key="CLAY" value="2" />
+                                <entry key="PAPYRUS" value="1" />
+                                <entry key="LOOM" value="1" />
+                            </map>
+                        </property>
+                    </bean>
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="129" />
+            <property name="name" value="Pantheon" />
+            <property name="age" value="2" />
+            <property name="playerCount" value="6" />
+            <property name="color" value="BLUE" />
+            <property name="forFree" value="Temple" />
+            <property name="victoryPoints" value="7" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                        <property name="blob">
+                            <map>
+                                <entry key="CLAY" value="2" />
+                                <entry key="ORE" value="1" />
+                                <entry key="GLASS" value="1" />
+                                <entry key="PAPYRUS" value="1" />
+                                <etnry key="LOOM" value="1" />
+                            </map>
+                        </property>
+                    </bean>
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="130" />
+            <property name="name" value="Townhall" />
+            <property name="age" value="2" />
+            <property name="playerCount" value="6" />
+            <property name="color" value="BLUE" />
+            <property name="victoryPoints" value="6" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                        <property name="blob">
+                            <map>
+                                <entry key="CLAY" value="2" />
+                                <entry key="ORE" value="1" />
+                                <entry key="GLASS" value="1" />
+                                <entry key="PAPYRUS" value="1" />
+                                <etnry key="LOOM" value="1" />
+                            </map>
+                        </property>
+                    </bean>
+                </list>
+            </property>
+        </bean>
+
+        <!-- Age III, 7 --> 
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="131" />
+            <property name="name" value="Arena" />
+            <property name="age" value="2" />
+            <property name="playerCount" value="7" />
+            <property name="color" value="YELLOW" />
+            <property name="forFree" value="Dispensary" />
+            <property name="whenPlayed">
+                <bean class="net.tompy.sw.function.CardFunctorCoinsForColorImpl">
+                    <property name="coins" value="3" />
+                    <property name="color" value="WONDER" />
+                </bean>
+            </property>
+            <property name="whenScored">
+                <bean class="net.tompy.sw.function.CardFunctorPointsForColorImpl">
+                    <property name="points" value="1" />
+                    <property name="colors">
+                        <list>
+                            <value>WONDER</value>
+                        </list>
+                    </property>
+                </bean>
+            </property>
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                        <property name="blob">
+                            <map>
+                                <entry key="STONE" value="2" />
+                                <entry key="ORE" value="1" />
+                            </map>
+                        </property>
+                    </bean>
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="132" />
+            <property name="name" value="Fortifications" />
+            <property name="age" value="2" />
+            <property name="playerCount" value="7" />
+            <property name="color" value="RED" />
+            <property name="forFree" value="Walls" />
+            <property name="militaryValue" value="3" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                        <property name="blob">
+                            <map>
+                                <entry key="STONE" value="1" />
+                                <entry key="ORE" value="3" />
+                            </map>
+                        </property>
+                    </bean>
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="133" />
+            <property name="name" value="Arsenal" />
+            <property name="age" value="2" />
+            <property name="playerCount" value="7" />
+            <property name="color" value="RED" />
+            <property name="militaryValue" value="3" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                        <property name="blob">
+                            <map>
+                                <entry key="WOOD" value="2" />
+                                <entry key="ORE" value="1" />
+                                <entry key="LOOM" value="1" />
+                            </map>
+                        </property>
+                    </bean>
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="134" />
+            <property name="name" value="Academy" />
+            <property name="age" value="2" />
+            <property name="playerCount" value="7" />
+            <property name="color" value="GREEN" />
+            <property name="forFree" value="School" />
+            <property name="science" value="COMPASS" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                        <property name="blob">
+                            <map>
+                                <entry key="STONE" value="3" />
+                                <entry key="GLASS" value="1" />
+                            </map>
+                        </property>
+                    </bean>
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="135" />
+            <property name="name" value="Observatory" />
+            <property name="age" value="2" />
+            <property name="playerCount" value="7" />
+            <property name="color" value="GREEN" />
+            <property name="forFree" value="Laboratory" />
+            <property name="science" value="GEAR" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                        <property name="blob">
+                            <map>
+                                <entry key="ORE" value="2" />
+                                <entry key="GLASS" value="1" />
+                                <entry key="LOOM" value="1" />s
+                            </map>
+                        </property>
+                    </bean>
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="136" />
+            <property name="name" value="Palace" />
+            <property name="age" value="2" />
+            <property name="playerCount" value="7" />
+            <property name="color" value="BLUE" />
+            <property name="victoryPoints" value="8" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                        <property name="blob">
+                            <map>
+                                <entry key="CLAY" value="1" />
+                                <entry key="WOOD" value="1" />
+                                <entry key="STONE" value="1" />
+                                <entry key="ORE" value="1" />
+                                <entry key="GLASS" value="1" />
+                                <entry key="PAPYRUS" value="1" />
+                                <entry key="LOOM" value="1" />
+                            </map>
+                        </property>
+                    </bean>
+                </list>
+            </property>
+        </bean>
+
+
+    </util:list>
+    
+    
+    <!-- Guilds -->
+    <util:list id="cards_guilds">
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="900" />
+            <property name="name" value="Shipowners Guild" />
+            <property name="color" value="PURPLE" />
+            <property name="whenScored">
+                <bean class="net.tompy.sw.function.CardFunctorPointsForColorImpl">
+                    <property name="colors">
+                        <list>
+                            <value>BROWN</value>
+                            <value>GREY</value>
+                            <value>PURPLE</value>
+                        </list>
+                    </property>
+                    <property name="points" value="1" />
+                </bean>
+            </property>
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                        <property name="blob">
+                            <map>
+                                <entry key="WOOD" value="3" />
+                                <entry key="GLASS" value="1" />
+                                <entry key="PAPYRUS" value="1" />
+                            </map>
+                        </property>
+                    </bean>
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="901" />
+            <property name="name" value="Craftsmens Guild" />
+            <property name="color" value="PURPLE" />
+            <property name="whenScored">
+                <bean class="net.tompy.sw.function.CardFunctorPointsForNeighborsColorImpl">
+                    <property name="colors">
+                        <list>
+                            <value>GREY</value>
+                        </list>
+                    </property>
+                    <property name="points" value="2" />
+                </bean>
+            </property>
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                        <property name="blob">
+                            <map>
+                                <entry key="ORE" value="2" />
+                                <entry key="STONE" value="2" />
+                            </map>
+                        </property>
+                    </bean>
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="902" />
+            <property name="name" value="Philosophers Guild" />
+            <property name="color" value="PURPLE" />
+            <property name="whenScored">
+                <bean class="net.tompy.sw.function.CardFunctorPointsForNeighborsColorImpl">
+                    <property name="colors">
+                        <list>
+                            <value>GREEN</value>
+                        </list>
+                    </property>
+                    <property name="points" value="1" />
+                </bean>
+            </property>
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                        <property name="blob">
+                            <map>
+                                <entry key="CLAY" value="3" />
+                                <entry key="LOOM" value="1" />
+                                <entry key="PAPYRUS" value="1" />
+                            </map>
+                        </property>
+                    </bean>
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="903" />
+            <property name="name" value="Spies Guild" />
+            <property name="color" value="PURPLE" />
+            <property name="whenScored">
+                <bean class="net.tompy.sw.function.CardFunctorPointsForNeighborsColorImpl">
+                    <property name="colors">
+                        <list>
+                            <value>RED</value>
+                        </list>
+                    </property>
+                    <property name="points" value="1" />
+                </bean>
+            </property>
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                        <property name="blob">
+                            <map>
+                                <entry key="CLAY" value="3" />
+                                <entry key="GLASS" value="1" />
+                            </map>
+                        </property>
+                    </bean>
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="904" />
+            <property name="name" value="Builders Guild" />
+            <property name="color" value="PURPLE" />
+            <property name="whenScored">
+                <bean class="net.tompy.sw.function.CardFunctorPointsForNeighborsColorImpl">
+                    <property name="colors">
+                        <list>
+                            <value>WONDER</value>
+                        </list>
+                    </property>
+                    <property name="points" value="1" />
+                    <property name="self" value="true" />
+                </bean>
+            </property>
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                        <property name="blob">
+                            <map>
+                                <entry key="STONE" value="2" />
+                                <entry key="CLAY" value="2" />
+                                <entry key="GLASS" value="1" />
+                            </map>
+                        </property>
+                    </bean>
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="905" />
+            <property name="name" value="Workers Guild" />
+            <property name="color" value="PURPLE" />
+            <property name="whenScored">
+                <bean class="net.tompy.sw.function.CardFunctorPointsForNeighborsColorImpl">
+                    <property name="colors">
+                        <list>
+                            <value>BROWN</value>
+                        </list>
+                    </property>
+                    <property name="points" value="1" />
+                </bean>
+            </property>
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                        <property name="blob">
+                            <map>
+                                <entry key="ORE" value="2" />
+                                <entry key="CLAY" value="1" />
+                                <entry key="STONE" value="1" />
+                                <entry key="WOOD" value="1" />
+                            </map>
+                        </property>
+                    </bean>
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="906" />
+            <property name="name" value="Strategists Guild" />
+            <property name="color" value="PURPLE" />
+            <property name="whenScored" ref="cardFunctor_NA" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                        <property name="blob">
+                            <map>
+                                <entry key="ORE" value="2" />
+                                <entry key="STONE" value="1" />
+                                <entry key="LOOM" value="1" />
+                            </map>
+                        </property>
+                    </bean>
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="907" />
+            <property name="name" value="Magistrates Guild" />
+            <property name="color" value="PURPLE" />
+            <property name="whenScored">
+                <bean class="net.tompy.sw.function.CardFunctorPointsForNeighborsColorImpl">
+                    <property name="colors">
+                        <list>
+                            <value>BLUE</value>
+                        </list>
+                    </property>
+                    <property name="points" value="1" />
+                </bean>
+            </property>
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                        <property name="blob">
+                            <map>
+                                <entry key="WOOD" value="3" />
+                                <entry key="STONE" value="1" />
+                                <entry key="LOOM" value="1" />
+                            </map>
+                        </property>
+                    </bean>
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="908" />
+            <property name="name" value="Traders Guild" />
+            <property name="color" value="PURPLE" />
+            <property name="whenScored">
+                <bean class="net.tompy.sw.function.CardFunctorPointsForNeighborsColorImpl">
+                    <property name="colors">
+                        <list>
+                            <value>YELLOW</value>
+                        </list>
+                    </property>
+                    <property name="points" value="1" />
+                </bean>
+            </property>
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                        <property name="blob">
+                            <map>
+                                <entry key="GLASS" value="1" />
+                                <entry key="LOOM" value="1" />
+                                <entry key="PAPYRUS" value="1" />
+                            </map>
+                        </property>
+                    </bean>
+                </list>
+            </property>
+        </bean>
+        <bean class="net.tompy.sw.component.Card7WondersImpl">
+            <property name="id" value="909" />
+            <property name="name" value="Scientists Guild" />
+            <property name="color" value="PURPLE" />
+            <property name="whenScienceScored" ref="cardFunctor_ScienceOption" />
+            <property name="availableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="tradeableResources">
+                <list>
+                    <ref bean="rg_none" />
+                </list>
+            </property>
+            <property name="costResources">
+                <list>
+                    <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                        <property name="blob">
+                            <map>
+                                <entry key="WOOD" value="2" />
+                                <entry key="ORE" value="2" />
+                                <entry key="PAPYRUS" value="1" />
+                            </map>
+                        </property>
+                    </bean>
+                </list>
+            </property>
+        </bean>
+    </util:list>    
+    
+    <!-- Property Placeholder Configurer -->
+    <bean id="cards_placeholderConfig" class="net.tompy.common.ArgumentListPropertyConfigurer" />
+    
+</beans>

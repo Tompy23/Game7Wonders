@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util">
+
+    <bean id="cardFunctor_NA" class="net.tompy.sw.function.CardFunctorNoOpImpl" />
+    
+    <bean id="cardFunctor_ScienceOption" class="net.tompy.sw.function.CardFunctorScienceOptionImpl" />
+
+    <bean id="cardFunctor_PlayLastCard" class="net.tompy.sw.function.CardFunctorPlayLastCardImpl" />
+
+    <bean id="cardFunctor_PlayDiscards" class="net.tompy.sw.function.CardFunctorPlayFromDiscardsImpl">
+        <property name="game" ref="7Wonders" />
+    </bean>
+
+    <bean id="cardFunctor_CopyGuild" class="net.tompy.sw.function.CardFunctorCopyGuildImpl" />
+
+    <bean id="cardFunctor_PlayOneCardFree" class="net.tompy.sw.function.CardFunctorPlayOneCardFreeImpl" />
+
+    <bean id="cardFunctor_3Coins" class="net.tompy.sw.function.CardFunctorAddCoinsImpl">
+        <property name="coins" value="3" />
+    </bean>    
+
+    <bean id="cardFunctor_4Coins" class="net.tompy.sw.function.CardFunctorAddCoinsImpl">
+        <property name="coins" value="4" />
+    </bean>    
+
+    <bean id="cardFunctor_5Coins" class="net.tompy.sw.function.CardFunctorAddCoinsImpl">
+        <property name="coins" value="5" />
+    </bean>    
+
+    <bean id="cardFunctor_9Coins" class="net.tompy.sw.function.CardFunctorAddCoinsImpl">
+        <property name="coins" value="9" />
+    </bean>    
+
+    <bean id="cardFunctor_TradeLeftRaw" class="net.tompy.sw.function.CardFunctorReduceTradeLeftRawMaterialsImpl">
+        <property name="newValue" value="1" />
+    </bean>    
+    
+    <bean id="cardFunctor_TradeRaw" class="net.tompy.sw.function.CardFunctorReduceTradeRawMaterialsImpl">
+        <property name="newValue" value="1" />
+    </bean>    
+
+    <bean id="cardFunctor_TradeRightRaw" class="net.tompy.sw.function.CardFunctorReduceTradeRightRawMaterialsImpl">
+        <property name="newValue" value="1" />
+    </bean>    
+
+    <bean id="cardFunctor_TradeManufactured" class="net.tompy.sw.function.CardFunctorReduceTradeManufacturedProductsImpl">
+        <property name="newValue" value="1" />
+    </bean>    
+
+    <bean id="cardFunctor_1coinForBrown" class="net.tompy.sw.function.CardFunctorCoinsForColorImpl">
+        <property name="color" value="BROWN" />
+        <property name="coins" value="1" />
+    </bean>    
+
+    <bean id="cardFunctor_1pointForBrown" class="net.tompy.sw.function.CardFunctorPointsForColorImpl">
+        <property name="colors">
+            <list>
+                <value>BROWN</value>
+            </list>
+        </property>
+        <property name="points" value="1" />
+    </bean>    
+
+    <bean id="cardFunctor_1coinForYellow" class="net.tompy.sw.function.CardFunctorCoinsForColorImpl">
+        <property name="color" value="YELLOW" />
+        <property name="coins" value="1" />
+    </bean>    
+
+    <bean id="cardFunctor_1pointForYellow" class="net.tompy.sw.function.CardFunctorPointsForColorImpl">
+        <property name="colors">
+            <list>
+                <value>YELLOW</value>
+            </list>
+        </property>
+        <property name="points" value="1" />
+    </bean>    
+
+    <bean id="cardFunctor_1coinForWonder" class="net.tompy.sw.function.CardFunctorCoinsForColorImpl">
+        <property name="color" value="WONDER" />
+        <property name="coins" value="1" />
+    </bean>    
+
+    <bean id="cardFunctor_1pointForWonder" class="net.tompy.sw.function.CardFunctorPointsForColorImpl">
+        <property name="colors">
+            <list>
+                <value>WONDER</value>
+            </list>
+        </property>
+        <property name="points" value="1" />
+    </bean>    
+
+    <!-- Property Placeholder Configurer -->
+    <bean id="cards_placeholderConfig" class="net.tompy.common.ArgumentListPropertyConfigurer" />
+    
+</beans>

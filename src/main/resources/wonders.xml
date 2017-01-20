@@ -1,0 +1,1224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util">
+
+
+<util:list id="wonders">
+    <bean class="net.tompy.sw.component.WonderBasicImpl">
+        <property name="id" value="1" />
+        <property name="name" value="Ephesos (A)" />
+        <property name="resource" ref="rg_papyrus_1" />
+        <property name="advances">
+            <util:list list-class="java.util.Stack">
+                <bean class="net.tompy.sw.component.Card7WondersImpl">
+                    <property name="id" value="3" />
+                    <property name="name" value="Ephesos A3" />
+                    <property name="color" value="WONDER" />
+                    <property name="victoryPoints" value="7" />
+                    <property name="availableResources">
+                        <list>
+                            <ref bean="rg_none" />
+                        </list>
+                    </property>
+                    <property name="tradeableResources">
+                        <list>
+                            <ref bean="rg_none" />
+                        </list>
+                    </property>
+                    <property name="costResources">
+                        <list>
+                            <ref bean="rg_papyrus_2" />
+                        </list>
+                    </property>                    
+                </bean>
+                <bean class="net.tompy.sw.component.Card7WondersImpl">
+                    <property name="id" value="2" />
+                    <property name="name" value="Ephesos A2" />
+                    <property name="color" value="WONDER" />
+                    <property name="whenPlayed" ref="cardFunctor_9Coins" />
+                    <property name="availableResources">
+                        <list>
+                            <ref bean="rg_none" />
+                        </list>
+                    </property>
+                    <property name="tradeableResources">
+                        <list>
+                            <ref bean="rg_none" />
+                        </list>
+                    </property>
+                    <property name="costResources">
+                        <list>
+                            <ref bean="rg_wood_2" />
+                        </list>
+                    </property>                    
+                </bean>
+                <bean class="net.tompy.sw.component.Card7WondersImpl">
+                    <property name="id" value="1" />
+                    <property name="name" value="Ephesos A1" />
+                    <property name="color" value="WONDER" />
+                    <property name="victoryPoints" value="3" />
+                    <property name="availableResources">
+                        <list>
+                            <ref bean="rg_none" />
+                        </list>
+                    </property>
+                    <property name="tradeableResources">
+                        <list>
+                            <ref bean="rg_none" />
+                        </list>
+                    </property>
+                    <property name="costResources">
+                        <list>
+                            <ref bean="rg_stone_2" />
+                        </list>
+                    </property>                    
+                </bean>
+            </util:list>
+        </property>
+    </bean>
+    
+    <bean class="net.tompy.sw.component.WonderBasicImpl">
+        <property name="id" value="2" />
+        <property name="name" value="Ephesos (B)" />
+        <property name="resource" ref="rg_papyrus_1" />
+        <property name="advances">
+            <util:list list-class="java.util.Stack">
+                <bean class="net.tompy.sw.component.Card7WondersImpl">
+                    <property name="id" value="3" />
+                    <property name="name" value="Ephesos B3" />
+                    <property name="color" value="WONDER" />
+                    <property name="victoryPoints" value="5" />
+                    <property name="whenPlayed" ref="cardFunctor_4Coins" />
+                    <property name="availableResources">
+                        <list>
+                            <ref bean="rg_none" />
+                        </list>
+                    </property>
+                    <property name="tradeableResources">
+                        <list>
+                            <ref bean="rg_none" />
+                        </list>
+                    </property>
+                    <property name="costResources">
+                        <list>
+		                    <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+		                        <property name="blob">
+		                            <map>
+		                                <entry key="PAPYRUS" value="1" />
+		                                <entry key="GLASS" value="1" />
+		                                <entry key="LOOM" value="1" />s
+		                            </map>
+		                        </property>
+		                    </bean>
+		                </list>
+		            </property>
+		        </bean>
+                <bean class="net.tompy.sw.component.Card7WondersImpl">
+                    <property name="id" value="2" />
+                    <property name="name" value="Ephesos A2" />
+                    <property name="color" value="WONDER" />
+                    <property name="whenPlayed" ref="cardFunctor_4Coins" />
+                    <property name="availableResources">
+                        <list>
+                            <ref bean="rg_none" />
+                        </list>
+                    </property>
+                    <property name="tradeableResources">
+                        <list>
+                            <ref bean="rg_none" />
+                        </list>
+                    </property>
+                    <property name="costResources">
+                        <list>
+                            <ref bean="rg_wood_2" />
+                        </list>
+                    </property>                    
+                </bean>
+                <bean class="net.tompy.sw.component.Card7WondersImpl">
+                    <property name="id" value="1" />
+                    <property name="name" value="Ephesos A1" />
+                    <property name="color" value="WONDER" />
+                    <property name="victoryPoints" value="3" />
+                    <property name="whenPlayed" ref="cardFunctor_4Coins" />                    
+                    <property name="availableResources">
+                        <list>
+                            <ref bean="rg_none" />
+                        </list>
+                    </property>
+                    <property name="tradeableResources">
+                        <list>
+                            <ref bean="rg_none" />
+                        </list>
+                    </property>
+                    <property name="costResources">
+                        <list>
+                            <ref bean="rg_stone_2" />
+                        </list>
+                    </property>                    
+                </bean>
+            </util:list>
+        </property>
+    </bean>
+
+    <bean class="net.tompy.sw.component.WonderBasicImpl">
+        <property name="id" value="3" />
+        <property name="name" value="Gizah (A)" />
+        <property name="resource" ref="rg_stone_1" />
+        <property name="advances">
+            <util:list list-class="java.util.Stack">
+                <bean class="net.tompy.sw.component.Card7WondersImpl">
+                    <property name="id" value="3" />
+                    <property name="name" value="Gizah A3" />
+                    <property name="color" value="WONDER" />
+                    <property name="victoryPoints" value="7" />
+                    <property name="availableResources">
+                        <list>
+                            <ref bean="rg_none" />
+                        </list>
+                    </property>
+                    <property name="tradeableResources">
+                        <list>
+                            <ref bean="rg_none" />
+                        </list>
+                    </property>
+                    <property name="costResources">
+                        <list>
+                            <ref bean="rg_stone_4" />
+                        </list>
+                    </property>                    
+                </bean>
+                <bean class="net.tompy.sw.component.Card7WondersImpl">
+                    <property name="id" value="2" />
+                    <property name="name" value="Gizah A2" />
+                    <property name="color" value="WONDER" />
+                    <property name="victoryPoints" value="5" />
+                    <property name="availableResources">
+                        <list>
+                            <ref bean="rg_none" />
+                        </list>
+                    </property>
+                    <property name="tradeableResources">
+                        <list>
+                            <ref bean="rg_none" />
+                        </list>
+                    </property>
+                    <property name="costResources">
+                        <list>
+                            <ref bean="rg_wood_3" />
+                        </list>
+                    </property>                    
+                </bean>
+                <bean class="net.tompy.sw.component.Card7WondersImpl">
+                    <property name="id" value="1" />
+                    <property name="name" value="Gizah A1" />
+                    <property name="color" value="WONDER" />
+                    <property name="victoryPoints" value="3" />
+                    <property name="availableResources">
+                        <list>
+                            <ref bean="rg_none" />
+                        </list>
+                    </property>
+                    <property name="tradeableResources">
+                        <list>
+                            <ref bean="rg_none" />
+                        </list>
+                    </property>
+                    <property name="costResources">
+                        <list>
+                            <ref bean="rg_stone_2" />
+                        </list>
+                    </property>                    
+                </bean>
+            </util:list>
+        </property>
+    </bean>
+
+    <bean class="net.tompy.sw.component.WonderBasicImpl">
+        <property name="id" value="4" />
+        <property name="name" value="Gizah (B)" />
+        <property name="resource" ref="rg_stone_1" />
+        <property name="advances">
+            <util:list list-class="java.util.Stack">
+                <bean class="net.tompy.sw.component.Card7WondersImpl">
+                    <property name="id" value="4" />
+                    <property name="name" value="Gizah B4" />
+                    <property name="color" value="WONDER" />
+                    <property name="victoryPoints" value="7" />
+                    <property name="availableResources">
+                        <list>
+                            <ref bean="rg_none" />
+                        </list>
+                    </property>
+                    <property name="tradeableResources">
+                        <list>
+                            <ref bean="rg_none" />
+                        </list>
+                    </property>
+                    <property name="costResources">
+                        <list>
+                            <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                                <property name="blob">
+                                    <map>
+                                        <entry key="PAPYRUS" value="1" />
+                                        <entry key="STONE" value="4" />
+                                    </map>
+                                </property>
+                            </bean>
+                        </list>
+                    </property>                    
+                </bean>
+                <bean class="net.tompy.sw.component.Card7WondersImpl">
+                    <property name="id" value="3" />
+                    <property name="name" value="Gizah B3" />
+                    <property name="color" value="WONDER" />
+                    <property name="victoryPoints" value="5" />
+                    <property name="availableResources">
+                        <list>
+                            <ref bean="rg_none" />
+                        </list>
+                    </property>
+                    <property name="tradeableResources">
+                        <list>
+                            <ref bean="rg_none" />
+                        </list>
+                    </property>
+                    <property name="costResources">
+                        <list>
+                            <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                                <property name="blob">
+                                    <map>
+                                        <entry key="CLAY" value="3" />
+                                    </map>
+                                </property>
+                            </bean>
+                        </list>
+                    </property>                    
+                </bean>
+                <bean class="net.tompy.sw.component.Card7WondersImpl">
+                    <property name="id" value="2" />
+                    <property name="name" value="Gizah B2" />
+                    <property name="color" value="WONDER" />
+                    <property name="victoryPoints" value="5" />
+                    <property name="availableResources">
+                        <list>
+                            <ref bean="rg_none" />
+                        </list>
+                    </property>
+                    <property name="tradeableResources">
+                        <list>
+                            <ref bean="rg_none" />
+                        </list>
+                    </property>
+                    <property name="costResources">
+                        <list>
+                            <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                                <property name="blob">
+                                    <map>
+                                        <entry key="STONE" value="3" />
+                                    </map>
+                                </property>
+                            </bean>
+                        </list>
+                    </property>                    
+                </bean>
+                <bean class="net.tompy.sw.component.Card7WondersImpl">
+                    <property name="id" value="1" />
+                    <property name="name" value="Gizah B1" />
+                    <property name="color" value="WONDER" />
+                    <property name="victoryPoints" value="3" />
+                    <property name="availableResources">
+                        <list>
+                            <ref bean="rg_none" />
+                        </list>
+                    </property>
+                    <property name="tradeableResources">
+                        <list>
+                            <ref bean="rg_none" />
+                        </list>
+                    </property>
+                    <property name="costResources">
+                        <list>
+                            <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                                <property name="blob">
+                                    <map>
+                                        <entry key="WOOD" value="2" />
+                                    </map>
+                                </property>
+                            </bean>
+                        </list>
+                    </property>                    
+                </bean>
+            </util:list>
+        </property>
+    </bean>
+
+    <bean class="net.tompy.sw.component.WonderBasicImpl">
+        <property name="id" value="5" />
+        <property name="name" value="Rhodos (A)" />
+        <property name="resource" ref="rg_ore_1" />
+        <property name="advances">
+            <util:list list-class="java.util.Stack">
+                <bean class="net.tompy.sw.component.Card7WondersImpl">
+                    <property name="id" value="3" />
+                    <property name="name" value="Rhodos A3" />
+                    <property name="color" value="WONDER" />
+                    <property name="victoryPoints" value="7" />
+                    <property name="availableResources">
+                        <list>
+                            <ref bean="rg_none" />
+                        </list>
+                    </property>
+                    <property name="tradeableResources">
+                        <list>
+                            <ref bean="rg_none" />
+                        </list>
+                    </property>
+                    <property name="costResources">
+                        <list>
+                            <ref bean="rg_ore_4" />
+                        </list>
+                    </property>                    
+                </bean>
+                <bean class="net.tompy.sw.component.Card7WondersImpl">
+                    <property name="id" value="2" />
+                    <property name="name" value="Rhodos A2" />
+                    <property name="color" value="WONDER" />
+                    <property name="militaryValue" value="2" />
+                    <property name="availableResources">
+                        <list>
+                            <ref bean="rg_none" />
+                        </list>
+                    </property>
+                    <property name="tradeableResources">
+                        <list>
+                            <ref bean="rg_none" />
+                        </list>
+                    </property>
+                    <property name="costResources">
+                        <list>
+                            <ref bean="rg_clay_3" />
+                        </list>
+                    </property>                    
+                </bean>
+                <bean class="net.tompy.sw.component.Card7WondersImpl">
+                    <property name="id" value="1" />
+                    <property name="name" value="Rhodos A1" />
+                    <property name="color" value="WONDER" />
+                    <property name="victoryPoints" value="3" />
+                    <property name="availableResources">
+                        <list>
+                            <ref bean="rg_none" />
+                        </list>
+                    </property>
+                    <property name="tradeableResources">
+                        <list>
+                            <ref bean="rg_none" />
+                        </list>
+                    </property>
+                    <property name="costResources">
+                        <list>
+                            <ref bean="rg_wood_2" />
+                        </list>
+                    </property>                    
+                </bean>
+            </util:list>
+        </property>
+    </bean>
+
+    <bean class="net.tompy.sw.component.WonderBasicImpl">
+        <property name="id" value="6" />
+        <property name="name" value="Rhodos (B)" />
+        <property name="resource" ref="rg_ore_1" />
+        <property name="advances">
+            <util:list list-class="java.util.Stack">
+                <bean class="net.tompy.sw.component.Card7WondersImpl">
+                    <property name="id" value="2" />
+                    <property name="name" value="Rhodos B2" />
+                    <property name="color" value="WONDER" />
+                    <property name="victoryPoints" value="4" />
+                    <property name="militaryValue" value="1" />
+                    <property name="whenPlayed" ref="cardFunctor_4Coins" />
+                    <property name="availableResources">
+                        <list>
+                            <ref bean="rg_none" />
+                        </list>
+                    </property>
+                    <property name="tradeableResources">
+                        <list>
+                            <ref bean="rg_none" />
+                        </list>
+                    </property>
+                    <property name="costResources">
+                        <list>
+                            <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                                <property name="blob">
+                                    <map>
+                                        <entry key="ORE" value="4" />
+                                    </map>
+                                </property>
+                            </bean>
+                        </list>
+                    </property>                    
+                </bean>
+                <bean class="net.tompy.sw.component.Card7WondersImpl">
+                    <property name="id" value="1" />
+                    <property name="name" value="Rhodos B1" />
+                    <property name="color" value="WONDER" />
+                    <property name="militaryValue" value="1" />
+                    <property name="victoryPoints" value="3" />
+                    <property name="whenPlayed" ref="cardFunctor_3Coins" />
+                    <property name="availableResources">
+                        <list>
+                            <ref bean="rg_none" />
+                        </list>
+                    </property>
+                    <property name="tradeableResources">
+                        <list>
+                            <ref bean="rg_none" />
+                        </list>
+                    </property>
+                    <property name="costResources">
+                        <list>
+                            <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                                <property name="blob">
+                                    <map>
+                                        <entry key="STONE" value="3" />
+                                    </map>
+                                </property>
+                            </bean>
+                        </list>
+                    </property>                    
+                </bean>
+            </util:list>
+        </property>
+    </bean>
+
+    <bean class="net.tompy.sw.component.WonderBasicImpl">
+        <property name="id" value="7" />
+        <property name="name" value="Alexandria (A)" />
+        <property name="resource" ref="rg_glass_1" />
+        <property name="advances">
+            <util:list list-class="java.util.Stack">
+                <bean class="net.tompy.sw.component.Card7WondersImpl">
+                    <property name="id" value="3" />
+                    <property name="name" value="Alexandria A3" />
+                    <property name="color" value="WONDER" />
+                    <property name="victoryPoints" value="7" />
+                    <property name="availableResources">
+                        <list>
+                            <ref bean="rg_none" />
+                        </list>
+                    </property>
+                    <property name="tradeableResources">
+                        <list>
+                            <ref bean="rg_none" />
+                        </list>
+                    </property>
+                    <property name="costResources">
+                        <list>
+                            <ref bean="rg_glass_2" />
+                        </list>
+                    </property>                    
+                </bean>
+                <bean class="net.tompy.sw.component.Card7WondersImpl">
+                    <property name="id" value="2" />
+                    <property name="name" value="Alexandria A2" />
+                    <property name="color" value="WONDER" />
+                    <property name="availableResources">
+                        <list>
+                            <ref bean="rg_clay_1" />
+                            <ref bean="rg_ore_1" />
+                            <ref bean="rg_wood_1" />
+                            <ref bean="rg_stone_1" />
+                        </list>
+                    </property>
+                    <property name="tradeableResources">
+                        <list>
+                            <ref bean="rg_none" />
+                        </list>
+                    </property>
+                    <property name="costResources">
+                        <list>
+                            <ref bean="rg_ore_2" />
+                        </list>
+                    </property>                    
+                </bean>
+                <bean class="net.tompy.sw.component.Card7WondersImpl">
+                    <property name="id" value="1" />
+                    <property name="name" value="Alexandria A1" />
+                    <property name="color" value="WONDER" />
+                    <property name="victoryPoints" value="3" />
+                    <property name="availableResources">
+                        <list>
+                            <ref bean="rg_none" />
+                        </list>
+                    </property>
+                    <property name="tradeableResources">
+                        <list>
+                            <ref bean="rg_none" />
+                        </list>
+                    </property>
+                    <property name="costResources">
+                        <list>
+                            <ref bean="rg_stone_2" />
+                        </list>
+                    </property>                    
+                </bean>
+            </util:list>
+        </property>
+    </bean>
+    
+    <bean class="net.tompy.sw.component.WonderBasicImpl">
+        <property name="id" value="8" />
+        <property name="name" value="Alexandria (B)" />
+        <property name="resource" ref="rg_glass_1" />
+        <property name="advances">
+            <util:list list-class="java.util.Stack">
+                <bean class="net.tompy.sw.component.Card7WondersImpl">
+                    <property name="id" value="3" />
+                    <property name="name" value="Alexandria B3" />
+                    <property name="color" value="WONDER" />
+                    <property name="victoryPoints" value="7" />
+                    <property name="availableResources">
+                        <list>
+                            <ref bean="rg_none" />
+                        </list>
+                    </property>
+                    <property name="tradeableResources">
+                        <list>
+                            <ref bean="rg_none" />
+                        </list>
+                    </property>
+                    <property name="costResources">
+                        <list>
+                            <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                                <property name="blob">
+                                    <map>
+                                        <entry key="STONE" value="3" />
+                                    </map>
+                                </property>
+                            </bean>
+                        </list>
+                    </property>                    
+                </bean>
+                <bean class="net.tompy.sw.component.Card7WondersImpl">
+                    <property name="id" value="2" />
+                    <property name="name" value="Alexandria B2" />
+                    <property name="color" value="WONDER" />
+                    <property name="availableResources">
+                        <list>
+                            <ref bean="rg_glass_1" />
+                            <ref bean="rg_loom_1" />
+                            <ref bean="rg_papyrus_1" />
+                        </list>
+                    </property>
+                    <property name="tradeableResources">
+                        <list>
+                            <ref bean="rg_none" />
+                        </list>
+                    </property>
+                    <property name="costResources">
+                        <list>
+                            <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                                <property name="blob">
+                                    <map>
+                                        <entry key="WOOD" value="2" />
+                                    </map>
+                                </property>
+                            </bean>
+                        </list>
+                    </property>                    
+                </bean>
+                <bean class="net.tompy.sw.component.Card7WondersImpl">
+                    <property name="id" value="1" />
+                    <property name="name" value="Alexandria B1" />
+                    <property name="color" value="WONDER" />
+                    <property name="availableResources">
+                        <list>
+                            <ref bean="rg_wood_1" />
+                            <ref bean="rg_stone_1" />
+                            <ref bean="rg_ore_1" />
+                            <ref bean="rg_clay_1" />
+                        </list>
+                    </property>
+                    <property name="tradeableResources">
+                        <list>
+                            <ref bean="rg_none" />
+                        </list>
+                    </property>
+                    <property name="costResources">
+                        <list>
+                            <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                                <property name="blob">
+                                    <map>
+                                        <entry key="CLAY" value="2" />
+                                    </map>
+                                </property>
+                            </bean>
+                        </list>
+                    </property>                    
+                </bean>
+            </util:list>
+        </property>
+    </bean>
+
+    <bean class="net.tompy.sw.component.WonderBasicImpl">
+        <property name="id" value="9" />
+        <property name="name" value="Babylon (A)" />
+        <property name="resource" ref="rg_clay_1" />
+        <property name="advances">
+            <util:list list-class="java.util.Stack">
+                <bean class="net.tompy.sw.component.Card7WondersImpl">
+                    <property name="id" value="3" />
+                    <property name="name" value="Babylon A3" />
+                    <property name="color" value="WONDER" />
+                    <property name="victoryPoints" value="7" />
+                    <property name="availableResources">
+                        <list>
+                            <ref bean="rg_none" />
+                        </list>
+                    </property>
+                    <property name="tradeableResources">
+                        <list>
+                            <ref bean="rg_none" />
+                        </list>
+                    </property>
+                    <property name="costResources">
+                        <list>
+                            <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                                <property name="blob">
+                                    <map>
+                                        <entry key="CLAY" value="4" />
+                                    </map>
+                                </property>
+                            </bean>
+                        </list>
+                    </property>                    
+                </bean>
+                <bean class="net.tompy.sw.component.Card7WondersImpl">
+                    <property name="id" value="2" />
+                    <property name="name" value="Babylon A2" />
+                    <property name="color" value="WONDER" />
+                    <property name="whenScienceScored" ref="cardFunctor_ScienceOption" />
+                    <property name="availableResources">
+                        <list>
+                            <ref bean="rg_none" />
+                        </list>
+                    </property>
+                    <property name="tradeableResources">
+                        <list>
+                            <ref bean="rg_none" />
+                        </list>
+                    </property>
+                    <property name="costResources">
+                        <list>
+                            <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                                <property name="blob">
+                                    <map>
+                                        <entry key="WOOD" value="3" />
+                                    </map>
+                                </property>
+                            </bean>
+                        </list>
+                    </property>                    
+                </bean>
+                <bean class="net.tompy.sw.component.Card7WondersImpl">
+                    <property name="id" value="1" />
+                    <property name="name" value="Babylon A1" />
+                    <property name="color" value="WONDER" />
+                    <property name="victoryPoints" value="3" />
+                    <property name="availableResources">
+                        <list>
+                            <ref bean="rg_none" />
+                        </list>
+                    </property>
+                    <property name="tradeableResources">
+                        <list>
+                            <ref bean="rg_none" />
+                        </list>
+                    </property>
+                    <property name="costResources">
+                        <list>
+                            <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                                <property name="blob">
+                                    <map>
+                                        <entry key="CLAY" value="2" />
+                                    </map>
+                                </property>
+                            </bean>
+                        </list>
+                    </property>                    
+                </bean>
+            </util:list>
+        </property>
+    </bean>
+
+    <bean class="net.tompy.sw.component.WonderBasicImpl">
+        <property name="id" value="10" />
+        <property name="name" value="Babylon (B)" />
+        <property name="resource" ref="rg_clay_1" />
+        <property name="advances">
+            <util:list list-class="java.util.Stack">
+                <bean class="net.tompy.sw.component.Card7WondersImpl">
+                    <property name="id" value="3" />
+                    <property name="name" value="Babylon B3" />
+                    <property name="color" value="WONDER" />
+                    <property name="whenScienceScored" ref="cardFunctor_ScienceOption" />
+                    <property name="availableResources">
+                        <list>
+                            <ref bean="rg_none" />
+                        </list>
+                    </property>
+                    <property name="tradeableResources">
+                        <list>
+                            <ref bean="rg_none" />
+                        </list>
+                    </property>
+                    <property name="costResources">
+                        <list>
+                            <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                                <property name="blob">
+                                    <map>
+                                        <entry key="CLAY" value="3" />
+                                        <entry key="PAPYRUS" value="1" />
+                                    </map>
+                                </property>
+                            </bean>
+                        </list>
+                    </property>                    
+                </bean>
+                <bean class="net.tompy.sw.component.Card7WondersImpl">
+                    <property name="id" value="2" />
+                    <property name="name" value="Babylon B2" />
+                    <property name="color" value="WONDER" />
+                    <property name="whenPlayed" ref="cardFunctor_PlayLastCard" />
+                    <property name="availableResources">
+                        <list>
+                            <ref bean="rg_none" />
+                        </list>
+                    </property>
+                    <property name="tradeableResources">
+                        <list>
+                            <ref bean="rg_none" />
+                        </list>
+                    </property>
+                    <property name="costResources">
+                        <list>
+                            <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                                <property name="blob">
+                                    <map>
+                                        <entry key="GLASS" value="1" />
+                                        <entry key="WOOD" value="2" />
+                                    </map>
+                                </property>
+                            </bean>
+                        </list>
+                    </property>                    
+                </bean>
+                <bean class="net.tompy.sw.component.Card7WondersImpl">
+                    <property name="id" value="1" />
+                    <property name="name" value="Babylon B1" />
+                    <property name="color" value="WONDER" />
+                    <property name="victoryPoints" value="3" />
+                    <property name="availableResources">
+                        <list>
+                            <ref bean="rg_none" />
+                        </list>
+                    </property>
+                    <property name="tradeableResources">
+                        <list>
+                            <ref bean="rg_none" />
+                        </list>
+                    </property>
+                    <property name="costResources">
+                        <list>
+                            <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                                <property name="blob">
+                                    <map>
+                                        <entry key="LOOM" value="1" />
+                                        <entry key="CLAY" value="1" />
+                                    </map>
+                                </property>
+                            </bean>
+                        </list>
+                    </property>                    
+                </bean>
+            </util:list>
+        </property>
+    </bean>
+
+    <bean class="net.tompy.sw.component.WonderBasicImpl">
+        <property name="id" value="11" />
+        <property name="name" value="Halikarnassos (A)" />
+        <property name="resource" ref="rg_loom_1" />
+        <property name="advances">
+            <util:list list-class="java.util.Stack">
+                <bean class="net.tompy.sw.component.Card7WondersImpl">
+                    <property name="id" value="3" />
+                    <property name="name" value="Hlikarnassos A3" />
+                    <property name="color" value="WONDER" />
+                    <property name="victoryPoints" value="7" />
+                    <property name="availableResources">
+                        <list>
+                            <ref bean="rg_none" />
+                        </list>
+                    </property>
+                    <property name="tradeableResources">
+                        <list>
+                            <ref bean="rg_none" />
+                        </list>
+                    </property>
+                    <property name="costResources">
+                        <list>
+                            <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                                <property name="blob">
+                                    <map>
+                                        <entry key="LOOM" value="2" />
+                                    </map>
+                                </property>
+                            </bean>
+                        </list>
+                    </property>                    
+                </bean>
+                <bean class="net.tompy.sw.component.Card7WondersImpl">
+                    <property name="id" value="2" />
+                    <property name="name" value="Halikarnassos A2" />
+                    <property name="color" value="WONDER" />
+                    <property name="whenPlayed" ref="cardFunctor_PlayDiscards" />
+                    <property name="availableResources">
+                        <list>
+                            <ref bean="rg_none" />
+                        </list>
+                    </property>
+                    <property name="tradeableResources">
+                        <list>
+                            <ref bean="rg_none" />
+                        </list>
+                    </property>
+                    <property name="costResources">
+                        <list>
+                            <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                                <property name="blob">
+                                    <map>
+                                        <entry key="ORE" value="3" />
+                                    </map>
+                                </property>
+                            </bean>
+                        </list>
+                    </property>                    
+                </bean>
+                <bean class="net.tompy.sw.component.Card7WondersImpl">
+                    <property name="id" value="1" />
+                    <property name="name" value="Halikarnossos A1" />
+                    <property name="color" value="WONDER" />
+                    <property name="victoryPoints" value="3" />
+                    <property name="availableResources">
+                        <list>
+                            <ref bean="rg_none" />
+                        </list>
+                    </property>
+                    <property name="tradeableResources">
+                        <list>
+                            <ref bean="rg_none" />
+                        </list>
+                    </property>
+                    <property name="costResources">
+                        <list>
+                            <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                                <property name="blob">
+                                    <map>
+                                        <entry key="CLAY" value="2" />
+                                    </map>
+                                </property>
+                            </bean>
+                        </list>
+                    </property>                    
+                </bean>
+            </util:list>
+        </property>
+    </bean>
+
+    <bean class="net.tompy.sw.component.WonderBasicImpl">
+        <property name="id" value="12" />
+        <property name="name" value="Halikarnassos (B)" />
+        <property name="resource" ref="rg_loom_1" />
+        <property name="advances">
+            <util:list list-class="java.util.Stack">
+                <bean class="net.tompy.sw.component.Card7WondersImpl">
+                    <property name="id" value="3" />
+                    <property name="name" value="Hlikarnassos B3" />
+                    <property name="color" value="WONDER" />
+                    <property name="whenPlayed" ref="cardFunctor_PlayDiscards" />
+                    <property name="availableResources">
+                        <list>
+                            <ref bean="rg_none" />
+                        </list>
+                    </property>
+                    <property name="tradeableResources">
+                        <list>
+                            <ref bean="rg_none" />
+                        </list>
+                    </property>
+                    <property name="costResources">
+                        <list>
+                            <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                                <property name="blob">
+                                    <map>
+                                        <entry key="GLASS" value="1" />
+                                        <entry key="PAPYRUS" value="1" />
+                                        <entry key="LOOM" value="1" />
+                                    </map>
+                                </property>
+                            </bean>
+                        </list>
+                    </property>                    
+                </bean>
+                <bean class="net.tompy.sw.component.Card7WondersImpl">
+                    <property name="id" value="2" />
+                    <property name="name" value="Halikarnassos B2" />
+                    <property name="color" value="WONDER" />
+                    <property name="whenPlayed" ref="cardFunctor_PlayDiscards" />
+                    <property name="victoryPoints" value="1" />
+                    <property name="availableResources">
+                        <list>
+                            <ref bean="rg_none" />
+                        </list>
+                    </property>
+                    <property name="tradeableResources">
+                        <list>
+                            <ref bean="rg_none" />
+                        </list>
+                    </property>
+                    <property name="costResources">
+                        <list>
+                            <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                                <property name="blob">
+                                    <map>
+                                        <entry key="CLAY" value="3" />
+                                    </map>
+                                </property>
+                            </bean>
+                        </list>
+                    </property>                    
+                </bean>
+                <bean class="net.tompy.sw.component.Card7WondersImpl">
+                    <property name="id" value="1" />
+                    <property name="name" value="Halikarnossos B1" />
+                    <property name="color" value="WONDER" />
+                    <property name="whenPlayed" ref="cardFunctor_PlayDiscards" />
+                    <property name="victoryPoints" value="2" />
+                    <property name="availableResources">
+                        <list>
+                            <ref bean="rg_none" />
+                        </list>
+                    </property>
+                    <property name="tradeableResources">
+                        <list>
+                            <ref bean="rg_none" />
+                        </list>
+                    </property>
+                    <property name="costResources">
+                        <list>
+                            <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                                <property name="blob">
+                                    <map>
+                                        <entry key="ORE" value="2" />
+                                    </map>
+                                </property>
+                            </bean>
+                        </list>
+                    </property>                    
+                </bean>
+            </util:list>
+        </property>
+    </bean>
+
+    <bean class="net.tompy.sw.component.WonderBasicImpl">
+        <property name="id" value="13" />
+        <property name="name" value="Olympia (A)" />
+        <property name="resource" ref="rg_wood_1" />
+        <property name="advances">
+            <util:list list-class="java.util.Stack">
+                <bean class="net.tompy.sw.component.Card7WondersImpl">
+                    <property name="id" value="3" />
+                    <property name="name" value="Olympia A3" />
+                    <property name="color" value="WONDER" />
+                    <property name="victoryPoints" value="7" />
+                    <property name="availableResources">
+                        <list>
+                            <ref bean="rg_none" />
+                        </list>
+                    </property>
+                    <property name="tradeableResources">
+                        <list>
+                            <ref bean="rg_none" />
+                        </list>
+                    </property>
+                    <property name="costResources">
+                        <list>
+                            <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                                <property name="blob">
+                                    <map>
+                                        <entry key="ORE" value="2" />
+                                    </map>
+                                </property>
+                            </bean>
+                        </list>
+                    </property>                    
+                </bean>
+                <bean class="net.tompy.sw.component.Card7WondersImpl">
+                    <property name="id" value="2" />
+                    <property name="name" value="Olympia A2" />
+                    <property name="color" value="WONDER" />
+                    <property name="whenPlayed" ref="cardFunctor_PlayOneCardFree" />
+                    <property name="availableResources">
+                        <list>
+                            <ref bean="rg_none" />
+                        </list>
+                    </property>
+                    <property name="tradeableResources">
+                        <list>
+                            <ref bean="rg_none" />
+                        </list>
+                    </property>
+                    <property name="costResources">
+                        <list>
+                            <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                                <property name="blob">
+                                    <map>
+                                        <entry key="STONE" value="2" />
+                                    </map>
+                                </property>
+                            </bean>
+                        </list>
+                    </property>                    
+                </bean>
+                <bean class="net.tompy.sw.component.Card7WondersImpl">
+                    <property name="id" value="1" />
+                    <property name="name" value="Olympia A1" />
+                    <property name="color" value="WONDER" />
+                    <property name="victoryPoints" value="3" />
+                    <property name="availableResources">
+                        <list>
+                            <ref bean="rg_none" />
+                        </list>
+                    </property>
+                    <property name="tradeableResources">
+                        <list>
+                            <ref bean="rg_none" />
+                        </list>
+                    </property>
+                    <property name="costResources">
+                        <list>
+                            <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                                <property name="blob">
+                                    <map>
+                                        <entry key="WOOD" value="2" />
+                                    </map>
+                                </property>
+                            </bean>
+                        </list>
+                    </property>                    
+                </bean>
+            </util:list>
+        </property>
+    </bean>
+
+    <bean class="net.tompy.sw.component.WonderBasicImpl">
+        <property name="id" value="13" />
+        <property name="name" value="Olympia (B)" />
+        <property name="resource" ref="rg_wood_1" />
+        <property name="advances">
+            <util:list list-class="java.util.Stack">
+                <bean class="net.tompy.sw.component.Card7WondersImpl">
+                    <property name="id" value="3" />
+                    <property name="name" value="Olympia B3" />
+                    <property name="color" value="WONDER" />
+                    <property name="whenPlayed" ref="cardFunctor_CopyGuild" />
+                    <property name="availableResources">
+                        <list>
+                            <ref bean="rg_none" />
+                        </list>
+                    </property>
+                    <property name="tradeableResources">
+                        <list>
+                            <ref bean="rg_none" />
+                        </list>
+                    </property>
+                    <property name="costResources">
+                        <list>
+                            <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                                <property name="blob">
+                                    <map>
+                                        <entry key="ORE" value="2" />
+                                        <entry key="LOOM" value="1" />
+                                    </map>
+                                </property>
+                            </bean>
+                        </list>
+                    </property>                    
+                </bean>
+                <bean class="net.tompy.sw.component.Card7WondersImpl">
+                    <property name="id" value="2" />
+                    <property name="name" value="Olympia B2" />
+                    <property name="color" value="WONDER" />
+                    <property name="victoryPoints" value="5" />
+                    <property name="availableResources">
+                        <list>
+                            <ref bean="rg_none" />
+                        </list>
+                    </property>
+                    <property name="tradeableResources">
+                        <list>
+                            <ref bean="rg_none" />
+                        </list>
+                    </property>
+                    <property name="costResources">
+                        <list>
+                            <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                                <property name="blob">
+                                    <map>
+                                        <entry key="STONE" value="2" />
+                                    </map>
+                                </property>
+                            </bean>
+                        </list>
+                    </property>                    
+                </bean>
+                <bean class="net.tompy.sw.component.Card7WondersImpl">
+                    <property name="id" value="1" />
+                    <property name="name" value="Olympia B1" />
+                    <property name="color" value="WONDER" />
+                    <property name="whenPlayed" ref="cardFunctor_TradeRaw" />
+                    <property name="availableResources">
+                        <list>
+                            <ref bean="rg_none" />
+                        </list>
+                    </property>
+                    <property name="tradeableResources">
+                        <list>
+                            <ref bean="rg_none" />
+                        </list>
+                    </property>
+                    <property name="costResources">
+                        <list>
+                            <bean class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+                                <property name="blob">
+                                    <map>
+                                        <entry key="WOOD" value="2" />
+                                    </map>
+                                </property>
+                            </bean>
+                        </list>
+                    </property>                    
+                </bean>
+            </util:list>
+        </property>
+    </bean>
+
+</util:list>    
+
+    <!-- Property Placeholder Configurer -->
+    <bean id="placeholderConfig" class="net.tompy.common.ArgumentListPropertyConfigurer" />
+    
+</beans>

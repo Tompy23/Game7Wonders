@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util">
+
+<import resource="gameAI_template.xml" />
+<import resource="players.xml" />
+<import resource="cards.xml" />
+<import resource="wonders.xml" />
+
+    <bean id="7Wonders" class="net.tompy.sw.game.Game7WondersImpl" init-method="init">
+        <property name="ages" value="${ages}" />
+        <property name="guildAge" value="${guild.age}" />
+        <property name="players" ref="${player.list}" />
+        <property name="allCards" ref="cards_ages" />
+        <property name="guilds" ref="cards_guilds" />
+        <property name="fsmCreator" ref="fsmGameCreator" />
+        <property name="stateFactory" ref="stateFactory" />
+        <property name="startCoins" value="${start.coins}" />
+        <property name="wonders" ref="wonders" />
+        <property name="rounds" value="${rounds}" />
+        <property name="turns" value="${turns}" />
+        <property name="cardsDealt" value="${cards.dealt}" />
+        <property name="real" value="true" />
+   </bean>
+   
+   <bean id="gameControl" class="net.tompy.sw.game.GamePlayController" />
+    
+    <bean id="fsmGameCreator" class="net.tompy.sw.game.FSMCreatorGameImpl" />
+    
+    <util:map id="7WondersStates">
+        <!-- Game States -->
+        <entry key="gameInit">
+		    <bean class="net.tompy.sw.game.StateGame7WondersInitializeImpl" >
+ 		        <property name="wonderAssignment" ref="${wonder.assignment}" />
+		    </bean>
+        </entry>
+        <entry key="gamePlay">
+            <bean class="net.tompy.sw.game.StateGame7WondersPlayImpl">
+                <property name="gameControl" ref="gameControl" />
+            </bean>
+        </entry>
+        <entry key="gameScore">
+            <bean class="net.tompy.sw.game.StateGame7WondersScoreImpl" />
+        </entry>
+        
+        <!-- Player States -->
+        <entry key="playerTakeTurn">
+            <bean class="net.tompy.sw.player.StatePlayer7WondersTakeTurnImpl" />
+        </entry>
+        <entry key="playerPlayCard">
+            <bean class="net.tompy.sw.player.StatePlayer7WondersPlayCardImpl" />
+        </entry>
+        <entry key="playerCardAction">
+            <bean class="net.tompy.sw.player.StatePlayer7WondersCardActionImpl" />
+        </entry>
+        <entry key="playerPassCards">
+            <bean class="net.tompy.sw.player.StatePlayer7WondersPassCardsImpl" />
+        </entry>
+        <entry key="playerPickUpCards">
+            <bean class="net.tompy.sw.player.StatePlayer7WondersPickUpCardsImpl" />
+        </entry>
+    </util:map>
+    
+    <!-- Property Placeholder Configurer -->
+    <bean id="placeholderConfig" class="net.tompy.common.ArgumentListPropertyConfigurer" />
+    
+</beans>

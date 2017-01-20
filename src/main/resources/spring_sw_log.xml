@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util">
+
+    <import resource="spring_common_log.xml" />
+
+    
+    <!-- Property Placeholder Configurer -->
+    <bean id="placeholderConfig" class="net.tompy.common.ArgumentListPropertyConfigurer" />
+    
+</beans>

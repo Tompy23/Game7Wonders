@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util">
+
+    <bean id="playerBasic" abstract="true" init-method="init">
+        <property name="fsmCreator" ref="fsmCreator" />
+        <property name="strategy" ref="strat_human" />
+        <property name="stateFactory" ref="stateFactory" />
+    </bean>
+     
+    <util:list id="playerList3" >
+         <bean class="net.tompy.sw.player.Player7WondersImpl" parent="playerBasic">
+            <property name="id" value="1" />
+            <property name="name" value="Alex" />
+            <property name="strategy" ref="strat_random" />
+        </bean>
+        <bean class="net.tompy.sw.player.Player7WondersImpl" parent="playerBasic">
+            <property name="id" value="2" />
+            <property name="name" value="Bobby" />
+            <property name="strategy" ref="strat_random" />
+        </bean>
+        <bean class="net.tompy.sw.player.Player7WondersImpl" parent="playerBasic">
+            <property name="id" value="3" />
+            <property name="name" value="Cindy" />
+            <property name="strategy" ref="strat_random" />
+        </bean>
+    </util:list>
+    <util:list id="playerList4">
+         <bean class="net.tompy.sw.player.Player7WondersImpl" parent="playerBasic">
+            <property name="id" value="1" />
+            <property name="name" value="Alex" />
+            <property name="strategy" ref="strat_random" />
+        </bean>
+        <bean class="net.tompy.sw.player.Player7WondersImpl" parent="playerBasic">
+            <property name="id" value="2" />
+            <property name="name" value="Bobby" />
+            <property name="strategy" ref="strat_random" />
+        </bean>
+        <bean class="net.tompy.sw.player.Player7WondersImpl" parent="playerBasic">
+            <property name="id" value="3" />
+            <property name="name" value="Cindy" />
+            <property name="strategy" ref="strat_random" />
+        </bean>
+        <bean class="net.tompy.sw.player.Player7WondersImpl" parent="playerBasic">
+            <property name="id" value="4" />
+            <property name="name" value="Drew" />
+            <property name="strategy" ref="strat_random" />
+        </bean>
+    </util:list>
+    
+    <util:list id="playerList5">
+         <bean class="net.tompy.sw.player.Player7WondersImpl" parent="playerBasic">
+            <property name="id" value="1" />
+            <property name="name" value="Alex" />
+            <property name="strategy" ref="strat_random" />
+        </bean>
+        <bean class="net.tompy.sw.player.Player7WondersImpl" parent="playerBasic">
+            <property name="id" value="2" />
+            <property name="name" value="Bobby" />
+            <property name="strategy" ref="strat_random" />
+        </bean>
+        <bean class="net.tompy.sw.player.Player7WondersImpl" parent="playerBasic">
+            <property name="id" value="3" />
+            <property name="name" value="Cindy" />
+            <property name="strategy" ref="strat_random" />
+        </bean>
+        <bean class="net.tompy.sw.player.Player7WondersImpl" parent="playerBasic">
+            <property name="id" value="4" />
+            <property name="name" value="Drew" />
+            <property name="strategy" ref="strat_random" />
+        </bean>
+        <bean class="net.tompy.sw.player.Player7WondersImpl" parent="playerBasic">
+            <property name="id" value="5" />
+            <property name="name" value="Emily" />
+            <property name="strategy" ref="strat_random" />
+        </bean>
+    </util:list>
+
+    <util:list id="playerList6">
+         <bean class="net.tompy.sw.player.Player7WondersImpl" parent="playerBasic">
+            <property name="id" value="1" />
+            <property name="name" value="Alex" />
+            <property name="strategy" ref="strat_random" />
+        </bean>
+        <bean class="net.tompy.sw.player.Player7WondersImpl" parent="playerBasic">
+            <property name="id" value="2" />
+            <property name="name" value="Bobby" />
+            <property name="strategy" ref="strat_random" />
+        </bean>
+        <bean class="net.tompy.sw.player.Player7WondersImpl" parent="playerBasic">
+            <property name="id" value="3" />
+            <property name="name" value="Cindy" />
+            <property name="strategy" ref="strat_random" />
+        </bean>
+        <bean class="net.tompy.sw.player.Player7WondersImpl" parent="playerBasic">
+            <property name="id" value="4" />
+            <property name="name" value="Drew" />
+            <property name="strategy" ref="strat_random" />
+        </bean>
+        <bean class="net.tompy.sw.player.Player7WondersImpl" parent="playerBasic">
+            <property name="id" value="5" />
+            <property name="name" value="Emily" />
+            <property name="strategy" ref="strat_random" />
+        </bean>
+        <bean class="net.tompy.sw.player.Player7WondersImpl" parent="playerBasic">
+            <property name="id" value="6" />
+            <property name="name" value="Natalie" />
+            <property name="strategy" ref="strat_random" />
+        </bean>
+    </util:list>
+ 
+    <util:list id="playerList7Tompy">
+         <bean class="net.tompy.sw.player.Player7WondersImpl" parent="playerBasic">
+            <property name="id" value="1" />
+            <property name="name" value="Tompy" />
+            <property name="strategy" ref="strat_human" />
+        </bean>
+        <bean class="net.tompy.sw.player.Player7WondersImpl" parent="playerBasic">
+            <property name="id" value="2" />
+            <property name="name" value="Bobby" />
+            <property name="strategy" ref="strat_random" />
+        </bean>
+        <bean class="net.tompy.sw.player.Player7WondersImpl" parent="playerBasic">
+            <property name="id" value="3" />
+            <property name="name" value="Cindy" />
+            <property name="strategy" ref="strat_random" />
+        </bean>
+        <bean class="net.tompy.sw.player.Player7WondersImpl" parent="playerBasic">
+            <property name="id" value="4" />
+            <property name="name" value="Drew" />
+            <property name="strategy" ref="strat_random" />
+        </bean>
+        <bean class="net.tompy.sw.player.Player7WondersImpl" parent="playerBasic">
+            <property name="id" value="5" />
+            <property name="name" value="Emily" />
+            <property name="strategy" ref="strat_random" />
+        </bean>
+        <bean class="net.tompy.sw.player.Player7WondersImpl" parent="playerBasic">
+            <property name="id" value="6" />
+            <property name="name" value="Natalie" />
+            <property name="strategy" ref="strat_random" />
+        </bean>
+        <bean class="net.tompy.sw.player.Player7WondersImpl" parent="playerBasic">
+            <property name="id" value="7" />
+            <property name="name" value="Grace" />
+            <property name="strategy" ref="strat_random" />
+        </bean>
+    </util:list>
+
+    <util:list id="playerList7">
+         <bean class="net.tompy.sw.player.Player7WondersImpl" parent="playerBasic">
+            <property name="id" value="1" />
+            <property name="name" value="Alex" />
+            <property name="strategy" ref="strat_random" />
+        </bean>
+        <bean class="net.tompy.sw.player.Player7WondersImpl" parent="playerBasic">
+            <property name="id" value="2" />
+            <property name="name" value="Bobby" />
+            <property name="strategy" ref="strat_random" />
+        </bean>
+        <bean class="net.tompy.sw.player.Player7WondersImpl" parent="playerBasic">
+            <property name="id" value="3" />
+            <property name="name" value="Cindy" />
+            <property name="strategy" ref="strat_random" />
+        </bean>
+        <bean class="net.tompy.sw.player.Player7WondersImpl" parent="playerBasic">
+            <property name="id" value="4" />
+            <property name="name" value="Drew" />
+            <property name="strategy" ref="strat_random" />
+        </bean>
+        <bean class="net.tompy.sw.player.Player7WondersImpl" parent="playerBasic">
+            <property name="id" value="5" />
+            <property name="name" value="Emily" />
+            <property name="strategy" ref="strat_random" />
+        </bean>
+        <bean class="net.tompy.sw.player.Player7WondersImpl" parent="playerBasic">
+            <property name="id" value="6" />
+            <property name="name" value="Natalie" />
+            <property name="strategy" ref="strat_random" />
+        </bean>
+        <bean class="net.tompy.sw.player.Player7WondersImpl" parent="playerBasic">
+            <property name="id" value="7" />
+            <property name="name" value="Grace" />
+            <property name="strategy" ref="strat_random" />
+        </bean>
+    </util:list>     
+    
+    <util:list id="playerList3MC" >
+         <bean class="net.tompy.sw.player.Player7WondersImpl" parent="playerBasic">
+            <property name="id" value="1" />
+            <property name="name" value="Alex" />
+            <property name="strategy" ref="strat_montecarloSimple" />
+        </bean>
+        <bean class="net.tompy.sw.player.Player7WondersImpl" parent="playerBasic">
+            <property name="id" value="2" />
+            <property name="name" value="Bobby" />
+            <property name="strategy" ref="strat_random" />
+        </bean>
+        <bean class="net.tompy.sw.player.Player7WondersImpl" parent="playerBasic">
+            <property name="id" value="3" />
+            <property name="name" value="Cindy" />
+            <property name="strategy" ref="strat_random" />
+        </bean>
+    </util:list>
+    
+    <util:list id="playerList7MC">
+         <bean class="net.tompy.sw.player.Player7WondersImpl" parent="playerBasic">
+            <property name="id" value="1" />
+            <property name="name" value="Alex" />
+            <property name="strategy" ref="strat_montecarloSimple" />
+        </bean>
+        <bean class="net.tompy.sw.player.Player7WondersImpl" parent="playerBasic">
+            <property name="id" value="2" />
+            <property name="name" value="Bobby" />
+            <property name="strategy" ref="strat_montecarloSimple" />
+        </bean>
+        <bean class="net.tompy.sw.player.Player7WondersImpl" parent="playerBasic">
+            <property name="id" value="3" />
+            <property name="name" value="Cindy" />
+            <property name="strategy" ref="strat_random" />
+        </bean>
+        <bean class="net.tompy.sw.player.Player7WondersImpl" parent="playerBasic">
+            <property name="id" value="4" />
+            <property name="name" value="Drew" />
+            <property name="strategy" ref="strat_montecarloSimple" />
+        </bean>
+        <bean class="net.tompy.sw.player.Player7WondersImpl" parent="playerBasic">
+            <property name="id" value="5" />
+            <property name="name" value="Emily" />
+            <property name="strategy" ref="strat_montecarloSimple" />
+        </bean>
+        <bean class="net.tompy.sw.player.Player7WondersImpl" parent="playerBasic">
+            <property name="id" value="6" />
+            <property name="name" value="Natalie" />
+            <property name="strategy" ref="strat_montecarloSimple" />
+        </bean>
+        <bean class="net.tompy.sw.player.Player7WondersImpl" parent="playerBasic">
+            <property name="id" value="7" />
+            <property name="name" value="Grace" />
+            <property name="strategy" ref="strat_montecarloSimple" />
+        </bean>
+    </util:list>     
+    
+        
+
+    <bean id="fsmCreator" class="net.tompy.sw.player.FSMCreatorPlayerImpl" />
+
+    <bean id="strat_random" class="net.tompy.sw.strategy.StrategyRandomImpl" />
+    
+    <bean id="strat_human" class="net.tompy.sw.strategy.StrategyHumanImpl">
+        <property name="game" ref="7Wonders" />
+    </bean>
+
+    <bean id="strat_montecarloSimple" class="net.tompy.sw.strategy.StrategyMonteCarloSimpleTotalImpl">
+        <property name="gameControl" ref="gameControl" />
+        <property name="iterations" value="${monte.carlo.iterations}" />
+    </bean>    
+    <bean id="wonder_random" class="net.tompy.sw.function.WonderAssignmentRandomImpl" />
+
+    <!-- Property Placeholder Configurer -->
+    <bean id="placeholderConfig" class="net.tompy.common.ArgumentListPropertyConfigurer" />
+    
+</beans>

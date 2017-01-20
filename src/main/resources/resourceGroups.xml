@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util">
+
+
+    <bean id="rg_none" class="net.tompy.sw.data.ResourceGroupData" init-method="init" />
+
+    <bean id="rg_ore_1" class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+        <property name="blob">
+            <map>
+                <entry key="ORE" value="1" />
+            </map>
+        </property>
+    </bean>
+    
+    <bean id="rg_stone_1" class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+        <property name="blob">
+            <map>
+                <entry key="STONE" value="1" />
+            </map>
+        </property>
+    </bean>
+
+    <bean id="rg_clay_1" class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+        <property name="blob">
+            <map>
+                <entry key="CLAY" value="1" />
+            </map>
+        </property>
+    </bean>
+    
+    <bean id="rg_wood_1" class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+        <property name="blob">
+            <map>
+                <entry key="WOOD" value="1" />
+            </map>
+        </property>
+    </bean>
+    
+    <bean id="rg_glass_1" class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+        <property name="blob">
+            <map>
+                <entry key="GLASS" value="1" />
+            </map>
+        </property>
+    </bean>
+    
+    <bean id="rg_loom_1" class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+        <property name="blob">
+            <map>
+                <entry key="LOOM" value="1" />
+            </map>
+        </property>
+    </bean>
+    
+    <bean id="rg_papyrus_1" class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+        <property name="blob">
+            <map>
+                <entry key="PAPYRUS" value="1" />
+            </map>
+        </property>
+    </bean>
+    
+    <bean id="rg_stone_2" class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+        <property name="blob">
+            <map>
+                <entry key="STONE" value="2" />
+            </map>
+        </property>
+    </bean>
+
+    <bean id="rg_wood_2" class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+        <property name="blob">
+            <map>
+                <entry key="WOOD" value="2" />
+            </map>
+        </property>
+    </bean>
+
+    <bean id="rg_ore_2" class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+        <property name="blob">
+            <map>
+                <entry key="ORE" value="2" />
+            </map>
+        </property>
+    </bean>
+
+    <bean id="rg_papyrus_2" class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+        <property name="blob">
+            <map>
+                <entry key="PAPYRUS" value="2" />
+            </map>
+        </property>
+    </bean>
+
+    <bean id="rg_glass_2" class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+        <property name="blob">
+            <map>
+                <entry key="GLASS" value="2" />
+            </map>
+        </property>
+    </bean>
+
+    <bean id="rg_wood_3" class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+        <property name="blob">
+            <map>
+                <entry key="WOOD" value="3" />
+            </map>
+        </property>
+    </bean>
+
+    <bean id="rg_clay_2" class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+        <property name="blob">
+            <map>
+                <entry key="CLAY" value="2" />
+            </map>
+        </property>
+    </bean>
+
+    <bean id="rg_stone_3" class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+        <property name="blob">
+            <map>
+                <entry key="STONE" value="3" />
+            </map>
+        </property>
+    </bean>
+
+    <bean id="rg_stone_4" class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+        <property name="blob">
+            <map>
+                <entry key="STONE" value="4" />
+            </map>
+        </property>
+    </bean>
+
+    <bean id="rg_clay_3" class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+        <property name="blob">
+            <map>
+                <entry key="CLAY" value="3" />
+            </map>
+        </property>
+    </bean>
+
+    <bean id="rg_ore_4" class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+        <property name="blob">
+            <map>
+                <entry key="ORE" value="4" />
+            </map>
+        </property>
+    </bean>
+
+    <bean id="rg_clay1_wood1_ore1" class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+        <property name="blob">
+            <map>
+                <entry key="ORE" value="1" />
+                <entry key="WOOD" value="1" />
+                <entry key="CLAY" value="1" />
+            </map>
+        </property>
+    </bean>
+
+    <bean id="rg_wood2_ore1" class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+        <property name="blob">
+            <map>
+                <entry key="ORE" value="1" />
+                <entry key="WOOD" value="2" />
+            </map>
+        </property>
+    </bean>
+
+    <bean id="rg_clay2_papyrus1" class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+        <property name="blob">
+            <map>
+                <entry key="PAPYRUS" value="1" />
+                <entry key="CLAY" value="2" />
+            </map>
+        </property>
+    </bean>
+
+    <bean id="rg_wood1_papyrus1" class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+        <property name="blob">
+            <map>
+                <entry key="PAPYRUS" value="1" />
+                <entry key="WOOD" value="1" />
+            </map>
+        </property>
+    </bean>
+
+    <bean id="rg_stone2_loom1" class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+        <property name="blob">
+            <map>
+                <entry key="LOOM" value="1" />
+                <entry key="STONE" value="2" />
+            </map>
+        </property>
+    </bean>
+
+    <bean id="rg_ore2_glass1" class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+        <property name="blob">
+            <map>
+                <entry key="GLASS" value="1" />
+                <entry key="ORE" value="2" />
+            </map>
+        </property>
+    </bean>
+
+    <bean id="rg_ore2_wood1" class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+        <property name="blob">
+            <map>
+                <entry key="WOOD" value="1" />
+                <entry key="ORE" value="2" />
+            </map>
+        </property>
+    </bean>
+
+    <bean id="rg_clay2_loom1" class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+        <property name="blob">
+            <map>
+                <entry key="LOOM" value="1" />
+                <entry key="CLAY" value="2" />
+            </map>
+        </property>
+    </bean>
+
+    <bean id="rg_wood1_clay1_glass1" class="net.tompy.sw.data.ResourceGroupData" init-method="init">
+        <property name="blob">
+            <map>
+                <entry key="GLASS" value="1" />
+                <entry key="CLAY" value="1" />
+                <entry key="WOOD" value="1" />
+            </map>
+        </property>
+    </bean>
+
+    <!-- Property Placeholder Configurer -->
+    <bean id="cards_placeholderConfig" class="net.tompy.common.ArgumentListPropertyConfigurer" />
+    
+</beans>
